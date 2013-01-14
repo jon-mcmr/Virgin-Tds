@@ -1,0 +1,21 @@
+.enquiryform{
+	h1.icon{
+		background-image: url('../img/icons/membership_equiry_icon.png');
+	}
+}
+
+.enquirythanks{
+	h1.icon{
+		background-image: url('../img/icons/form_thanks_h1.png');
+	}
+	
+	.data_list{
+		strong{
+			display: block;
+		}
+
+		a{
+			font-weight: normal;
+		}
+	}
+}

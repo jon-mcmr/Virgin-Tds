@@ -1,0 +1,40 @@
+.clubfinder{
+	img{
+		width:100%;
+	}
+	
+	h1.icon{
+		background-image: url('../img/icons/club_finder_icon.png');
+	}
+	
+	p.address{
+		margin: 0px;
+	}
+
+	.data_block{
+		.data_footer{		
+			ul{
+				padding:0 10px;
+
+				li{
+					list-style:none;
+					float:left;
+					font-weight:bold;
+					padding-left:15px;
+
+					&.distance{
+						background:url('../img/icons/distance_icon.png') 0 center no-repeat;
+					}
+
+					&.phone{
+						background:url('../img/icons/icon-phone.png') 0 center no-repeat;
+						float:right;
+						padding-left:20px;
+					}
+				}
+			}
+		}
+		
+	}
+}
+

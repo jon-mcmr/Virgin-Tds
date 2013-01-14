@@ -1,0 +1,171 @@
+/** Stylesheet for IE 6 & 7 **/
+
+/* Portal */
+.portal header 	{ width: 650px; }
+.portal h2		{ margin:40px 0 20px;}
+.portal aside h2 {margin:0 20px 0 0;}
+
+.subnav ul, .sub-subnav ul 	{display:inline-block; }
+.subnav ul, .sub-subnav ul	{display:inline; }	/* double declaration of display to fool ie6/7 */
+.subnav, .sub-subnav		{text-align:center; }
+
+#footer-sub #change-country a 	{ margin-right:-9px; }
+
+/* Campaigns */
+#campaign h1 		{ font-size:300%;}
+#campaign .cta-book	{ padding-top:18px;background-position: right 25px;}
+
+/* IE6 */
+* html p.show { height:0px; } 
+* html header nav ul li.first 				{ padding-left:0; }
+* html ul#partners li.first 				{ margin-left:0; }
+* html footer nav ul li.first 				{ padding-left:0; border-left:none; }
+* html section.promo p 						{ width: 210px; }
+* html #joinus								{ margin-left:15px; }
+* html .panel-l								{ float:left; }
+* html .thanks .panel-l						{ height:646px; }
+* html .clubfinder-enquiry .panel-l			{ width:465px; height:350px; }
+* html .clubfinder-enquiry #enquirypanel 	{ height:350px; width:470px; overflow:hidden }
+* html #primary-r 							{ margin-right:10px; }
+* html #facilities .classes section 		{ margin: 0 0 20px 9px; }
+* html .list-container aside                { margin-right:6px; }
+* html .home .half-panel p                  { width:280px; }
+* html .membership-pers .notes-bottom-panel { padding-right:0;}
+* html .club-staff .inner                   { margin-right:0;}
+* html .single-article .article-summary-main {width:620px;}
+* html #tool-cc .form-inputs .wrap {clear:both;}
+* html .results-intro { background-image:url("../images/ie/tools-arrow.png"); }
+
+/* Navigation fixes */
+* html nav li.level1 				{border:0; }
+* html a.btn-cta					{background:#c00 url(../images/cta-arrow.gif) right 5px no-repeat; }
+.ie6 nav .nav-drop-col3,
+.ie7 nav .nav-drop-col3,
+.ie8 nav .nav-drop-col3 { height:175px; }
+.ie9 nav .nav-drop-col3 { min-height:145px; }
+
+/* Footer / Lists */
+ul#social li a span				            { width:38px; height:36px;margin-left:0; }
+* html #footer-sub li, * html .jump-nav li  { background: url("../images/ie/divider.gif") no-repeat 0 4px; }
+* html .jump-nav ul                         { margin:0 0 0 230px; }
+
+/* Home page carousel fixes */
+#streetview a				{display:block; width:50px; }
+#streetview a span			{height:65px; background:url(../images/ie/icons_sprite.gif) -60px 21px no-repeat; }
+#carousel_icons li				{display:block; float:left; }
+#carousel_icons li a			{display:block; }
+.ie6 .hotspot-glow, .ie7 .hotspot-glow, .ie8 .hotspot-glow	{border:0; }
+
+* html .clubfinder-enquiry fieldset.pickclub 	{height:190px; }
+* html #filter-results-panel li					{display:inline-block; } 
+
+/* memberships section  */
+/* sub-menu styles	- outer wrapper ID used as otherwise declaration doesn't appear to be specific enough and doesn't work for IE6 */
+* html #wrapper .subnav-icons ul li a{color: #FFF; line-height: 50px;}
+* html #wrapper .subnav-icons ul li a.active,
+* html #wrapper .subnav-icons ul li a:hover {background-color: #FFF; color: #1a1a1a; border-bottom: none;}
+
+
+/* your health section */
+* html #content.your-health {padding: 20px; width: 938px; border-top: none;}
+* html .article-summary-main .article-cta-tags .article-tags-list span {padding: 6px 6px; margin-left: 6px;}
+* html p.moreinfo, * html a.moreinfo, * html .layout-inner-panels ul li a, * html table p a, * html .members-offer p a, * html .post-summary a {background-image: url(../images/icons/gif-sprite.gif);background-position:-88px 3px;}
+* html p.dot-green {background-image: url(../images/icons/gif-sprite.gif);background-position: -82px -296px;}
+* html p.dot-yellow {background-image: url(../images/icons/gif-sprite.gif);background-position: -222px -160px;}
+
+p.moreinfo, a.moreinfo, 
+.layout-inner-panels ul li a, 
+table p a, .members-offer p a,
+.post-summary a	{ background:url(../images/icons/arrow-info.gif) no-repeat left 2px;padding-left:15px; }
+
+* html p.moreinfo, 
+* html a.moreinfo, 
+* html .layout-inner-panels ul li a, 
+* html .layout ul.moreinfo li, 
+* html .layout-block ul.moreinfo li a, 
+* html table p a, 
+* html .members-offer p a, 
+* html .post-summary a { background: url("../images/icons/arrow-info.gif") no-repeat scroll left 2px transparent; padding-left: 15px; }
+
+* html .tool-bmi .tool-bmi-results .result-scale .your-marker {background: url(../images/tools/scale-position-marker.gif) left bottom no-repeat;}
+
+* html .narrow-by-filter .accordion-list .accordion-item.selected  h5 {background-color: #ccc;}
+
+/* contact us section */
+* html #wrapper .equal-padding              { padding: 20px; width: 938px; }
+
+/* Club pages */    
+.send-message-form textarea 			        { width:550px; }
+* html .club-summary .club-ctas                 {position:absolute;left:195px;bottom:20px;width:230px;}                
+*html .club-summary p.visit-club                {position:absolute;right:10px;bottom:10px;}
+* html .club-summary .club-ctas li.timetables   {margin-right:10px;}
+.ie7 .club-summary .club-ctas li.timetables     {margin-right:8px;}
+* html .club-summary .club-ctas                 {overflow:hidden;position:static;margin-left:175px;top:130px;}
+* html .club-summary p.visit-club               {top:120px;}
+
+/* pagination element */
+* html .pagination-panel                    {zoom:1; oveflow:hidden; height:30px; }
+
+/* IE6 & 7 */
+#reveal section p							{ width:400px; }
+.clubfinder-enquiry .frm select.text 	    { height:30px; }
+
+/* your health section */
+.memberships-benefits .intro-copy-full-width p{word-spacing: -1px;}		/* part pixel spacings not picked up by IE ? */
+
+/* Our partners */
+* html .send-message-form .top {background:url("../images/backgrounds/bg-sprite.gif") no-repeat -1522px -418px #d9d9d9;}
+
+* html .icon-hot		{background:url("../images/ie/icon-hot.gif") no-repeat; }
+* html .icon-new		{background:url("../images/ie/icon-new.gif") no-repeat; }
+* html .icon-feedback	{background:url("../images/ie/icon-feedback.gif") no-repeat; }
+* html .icon-say-hi		{background:url("../images/ie/icon-say-hi.gif") no-repeat; }
+* html .icon-events		{background:url("../images/ie/icon-events.gif") no-repeat; }
+* html .icon-promo		{background:url("../images/ie/icon-promo.gif") no-repeat; }
+* html .icon-news		{background:url("../images/ie/icon-news.gif") no-repeat; }
+
+/* buttons */
+
+* html .panel-arrow		{ top:0; right:-1px; }
+* html a.arrow 			{ top:0; cursor:pointer; } 
+* html .home .panel-arrow { bottom: 162px; }
+* html .full-panel .panel-arrow		{ top:268px; }
+* html .half-panel .panel-arrow		{ top:164px; }
+* html .third-panel .panel-arrow	{ top:138px; }
+* html .quarter-panel .panel-arrow	{ top:68px; }
+
+
+* html .btn-cta,
+* html .btn-cta-big,
+* html .btn-cta-xl,			
+* html .btn-download-sm,
+* html .btn-download	{ background-image:url(../images/ie/btns.png) }
+
+* html #member-login .btn-cta	{ background: url("../images/ie/btn-memberlogin.gif") 134px 10px no-repeat #ad0000; }
+* html #member-login .btn-cta:hover	{ background: url("../images/ie/btn-memberlogin.gif") 134px -26px no-repeat #1b1b1b; }
+
+* html .membership-pers .howtojoin .membs-cta .cta-wrap { height:43px; }
+
+* html .footer-cta {height:48px;} 
+* html .layout-panels .hb-offer p.halfwidth-offer,
+* html .layout-panels .hb-offer p.fullwidth-offer {position:relative;}
+* html p.halfwidth-offer em, * html p.fullwidth-offer em {position:absolute; top:10px; right:10px;}
+
+/* Clubs sprite */
+* html .title-note, * html .membership-corp .offers, * html .membs-cta.last, * html .membership-corp .offers ul li, * html .membership-type .features li, * html .membership-pers .howtojoin .membs-cta , * html .icon-list a, * html #timetable-filter .filter-class a, * html #filter-results-panel li a.close-category, * html .club-finder-results .view-links a, * html .map-info-panel .close, * html .classic p.timestamp, * html p.homeclub a, * html .classic #content .findus li a, * html .classic #content #timetable-filter .filter-class a, * html .classic #primary-l .memberships-wrap .plan-duration, * html .classic .membership-plans-also h2, * html .classic .people-profile section div.highlight-panel, * html #clubfinder-panel .close-btn, * html aside p.call, * html .findus li a, * html aside .info .icon-train, * html aside .info .icon-tube, * html #close-overlay span, * html .map-overlay #directions-form li, * html .map-overlay .transport span, * html .map-overlay #directions-form li, * html .map-overlay .get-directions #reverse span, * html .club-alert, * html .club-alert p, * html .club-news p.timestamp {background-image:url(../images/ie/clubs-sprite.gif); }
+* html .membership-type .features li {padding-left:40px;background-position:-105px -1127px;}
+* html .membership-type .title-note { margin-left: 0; }
+* html .membership-type .title-note h3 {padding-top:14px;}
+* html .membership-full .title-note h3, * html .classic .membership-full .title-note h3 { background-position: 10px 13px; }
+* html .membership-club .title-note h3, * html .classic .membership-club .title-note h3 { background-position:10px -51px;background-color: #4d4d4d;}
+* html .membership-offpeak .title-note h3, * html .classic .membership-offpeak .title-note h3 { background-position:10px -117px;background-color: #808080;}
+
+* html #clubfinder-panel .tooltip-arrow, * html #clubfinder-panel #last-homeclub a, * html #clubfinder-panel #last-homeclub a:hover, * html #clubfinder-panel #last-homeclub a:focus, * html #clubfinder-panel #last-viewclub a, * html .ui-autocomplete a, #change-country a, * html .wrapErrorFullWidth .chzn-container-multi .chzn-choices, * html .narrow-by-filter .accordion-item  h5, * html .sub-subnav a:hover, * html .sub-subnav a.active, * html .error-wrap, * html .club-access-info, * html .reciprocal-list .dot-green, * html .reciprocal-list .dot-yellow, * html .access-details .dot-green, * html .access-details .dot-yellow, * html #worksouts-sub li.active, * html .contrast-panel li, * html .units-switch a.active, * html .faqs-panel li h5, * html .tooltip-arrow, * html .hotspot-content, * html .hotspot-content a, * html .chzn-container-single .chzn-single div b, * html .chzn-container-multi .chzn-choices {background-image: url(../images/ie/arrows.gif);}
+
+* html .contact-intro { padding-right:0;}
+* html p.select-membs { background-image: url(../images/ie/or.gif);}
+* html .kids-v .kids-panel1 h2, * html .kids-panel1 h3, * html .kids-panel1 p {float:left;width:600px;}
+* html .kids-v .kids-panel3 h2, * html .kids-panel3 h3, * html .kids-panel3 p, 
+* html .kids-v .kids-panel5 h2, * html .kids-panel5 h3, * html .kids-panel5 p {float:left;width:450px;}
+* html .kids-panel5 p.moreinfo {margin-left:203px;}
+* html #content_0_centre_0_drpPreferredTime {width:200px;}

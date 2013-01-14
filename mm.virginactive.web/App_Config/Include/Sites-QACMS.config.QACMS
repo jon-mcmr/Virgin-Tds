@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<configuration xmlns:x="http://www.sitecore.net/xmlconfig/">
+  <sitecore>
+    <settings>
+        <!--  MAIL SERVER
+            SMTP server used for sending mails by the Sitecore server
+            Is used by MainUtil.SendMail()
+            Default value:
+      -->
+        <setting name="MailServer">
+          <x:attribute name="value">smtp.sendgrid.net</x:attribute>
+        </setting>
+
+        <!--  MAIL SERVER USER
+            If the SMTP server requires login, enter the user name in this setting
+      -->
+        <setting name="MailServerUserName">
+          <x:attribute name="value">mmvirginactive</x:attribute>
+        </setting>
+
+        <!--  MAIL SERVER PASSWORD
+            If the SMTP server requires login, enter the password in this setting
+      -->
+        <setting name="MailServerPassword">
+          <x:attribute name="value">rhip7shog8whos</x:attribute>
+        </setting>
+        <!--  MAIL SERVER PORT
+            If the SMTP server requires a custom port number, enter the value in this setting.
+            The default value is: 25
+      -->
+        <setting name="MailServerPort">
+          <x:attribute name="value">587</x:attribute>
+        </setting>
+
+      <!--  System Emails
+            Turn System Emails true -email sent to live addresses/false -use test email
+      -->
+      <setting name="SystemEmails" value="false" />
+
+      <!--  mm.TestEmailAddress
+            Use for email if system emails turned off
+      -->
+      <setting name="mm.TestEmailAddress" value="jon@mccormackmorrison.com" />
+
+      <!-- Enable event queues for live publishing -->
+      <setting name="EnableEventQueues">
+        <x:attribute name="value">true</x:attribute>
+      </setting>
+
+			<!--  Virgin.SystemsErrorToMailNotification
+            Add this to turn on error alerting / emailing
+      -->
+			<!--<setting name="Virgin.SystemsErrorToMailNotification" value="rohit@mccormackmorrison.com"/>-->
+			
+			<!--  mm.virginactive.reports
+            Use for marketing campaigns
+      -->
+      <setting name="ConnectionString_VirginActiveReports" value="user id=VA_ReportUser;password=V@QAUsr;Data Source=UKDC01WQASQL01\QASQL01;Database=WEB_VirginActiveReports" />
+
+      <!--  mm.virginactive.orm
+            Use for timetable caching
+      -->
+      <setting name="ConnectionString_VirginActiveCache" value="Data Source=UKDC01WQASQL01\QASQL01;Initial Catalog=WEB_VirginActiveCache;Persist Security Info=True;User ID=USR_VirginActiveCache;Password=TeREtre2" />
+      
+    </settings>
+    
+    <!--QA CMS-->
+    <sc.variable name="dataFolder" value="D:\websites\qacms.virginactive\Data" />
+    
+
+    <!--QA CMS-->
+    <scheduling>
+      <agent type="Sitecore.Tasks.UrlAgent" method="Run" interval="01:00:00">
+        <param desc="url">http://qacms.virginactive/?ajax=1&amp;cmd=KeepAlive</param>
+      </agent>
+    </scheduling>
+
+    <events timingLevel="custom">
+      <event name="publish:end">
+        <handler type="Sitecore.Publishing.HtmlCacheClearer, Sitecore.Kernel" method="ClearCache">
+          <sites hint="list">
+            <x:delete />
+          </sites>
+          <sites hint="list">
+            <site>website</site>
+            <site>virginactivecms</site>
+            <site>virginactiveglobal</site>
+            <site>esporta</site>
+            <site>esportauk</site>
+          </sites>
+        </handler>
+      </event>
+      <event name="publish:end:remote">
+        <handler type="Sitecore.Publishing.HtmlCacheClearer, Sitecore.Kernel" method="ClearCache">
+          <sites hint="list">
+            <x:delete />
+          </sites>
+          <sites hint="list">
+            <site>website</site>
+            <site>virginactive</site>
+            <site>virginactiveglobal</site>
+            <site>esporta</site>
+            <site>esportauk</site>
+          </sites>
+        </handler>
+      </event>
+    </events>
+
+    <!--QA CMS-->
+    <sites>
+      <site name="virginactive" x:before="site[@name='website']"
+            virtualFolder="/"
+            physicalFolder="/"
+            rootPath="/sitecore/content"
+            startItem="/home"
+            database="web"
+            domain="extranet"
+            allowDebug="true"
+            cacheHtml="true"
+            htmlCacheSize="350MB"
+            enablePreview="false"
+            enableWebEdit="false"
+            enableDebugger="true"
+            disableClientData="false"
+            hostName="uat.virginactive.co.uk"
+            enableAnalytics="false" />
+
+      <site name="virginactivecms" x:before="site[@name='website']"
+            virtualFolder="/"
+            physicalFolder="/"
+            rootPath="/sitecore/content"
+            startItem="/home"
+            database="web"
+            domain="extranet"
+            allowDebug="true"
+            cacheHtml="true"
+            htmlCacheSize="350MB"
+            enablePreview="false"
+            enableWebEdit="false"
+            enableDebugger="true"
+            disableClientData="false"
+            hostName="qacms.virginactive"
+            enableAnalytics="false" />
+
+      <!-- Static Landing pages -->
+      <site name="virginactiveglobal" x:before="site[@name='website']"
+                virtualFolder="/"
+                physicalFolder="/"
+                rootPath="/sitecore/content"
+                startItem="/worldwide"
+                database="web"
+                domain="extranet"
+                allowDebug="true"
+                cacheHtml="true"
+                htmlCacheSize="5MB"
+                enablePreview="false"
+                enableWebEdit="false"
+                enableDebugger="true"
+                disableClientData="false"
+                hostName="www.virginactive.com"/>
+
+      <site name="esporta" x:before="site[@name='website']"
+            virtualFolder="/"
+            physicalFolder="/"
+            rootPath="/sitecore/content"
+            startItem="/esportahome"
+            database="web"
+            domain="extranet"
+            allowDebug="true"
+            cacheHtml="true"
+            htmlCacheSize="5MB"
+            enablePreview="false"
+            enableWebEdit="false"
+            enableDebugger="true"
+            disableClientData="false"
+            hostName="www.esporta.com"/>
+
+
+      <site name="esportauk" x:before="site[@name='website']"
+                virtualFolder="/"
+                physicalFolder="/"
+                rootPath="/sitecore/content"
+                startItem="/esportahome"
+                database="web"
+                domain="extranet"
+                allowDebug="true"
+                cacheHtml="true"
+                htmlCacheSize="5MB"
+                enablePreview="false"
+                enableWebEdit="false"
+                enableDebugger="true"
+                disableClientData="false"
+                hostName="www.esporta.co.uk"/>
+
+    </sites>
+    </sitecore>
+</configuration>

@@ -1,0 +1,148 @@
+/* Basic */
+h1			{width:300px; margin-left:70px; text-shadow:0 -3px 0 #850000; color:#fff; font:420%/1.1 "HelveticaNeueW01-BdExt",Helvetica,Arial,sans-serif; }
+h2			{padding:11px 0 10px; color:#fff; font:100%/1.1 "HelveticaNeueW01-BdExt",Helvetica,Arial,sans-serif; }
+
+/* Page structure */
+article				{overflow:hidden; margin-bottom:50px; background:#f0f0f0 url("../img/bg.png") repeat; }
+#wrapper 			{overflow:hidden; position:relative; }
+#content	 		{width:918px; overflow:hidden; margin:0 auto; padding:20px 29px 10px; border:1px solid #ccc; background:#fff; }
+#logo				{margin:30px auto 0; text-shadow:0 2px 0 #fff; }
+.panel-left 		{float:left; width:420px; margin-top:20px; }
+.panel-right 		{float:right; }
+
+/****** More is less campaign ******/
+.hero 				{width:950px; overflow:hidden; margin:0 auto; padding:20px 10px 26px 20px; background:#c00; font-family:"HelveticaNeueW01-BdExt",Helvetica,Arial,sans-serif; }
+.hero .panel-left	{width:430px; margin-top:0; text-align:center; }
+.hero .panel-right	{width:490px; padding:10px 0 0 10px; background:url("../img/moreisless/bg-youtube.gif") no-repeat; }
+.hero h2			{text-shadow:0 -2px 0 #850000; }
+
+.clubfinder-enquiry 		{width:1000px; margin:-20px 0 0 10px; overflow:hidden; background:url("../img/moreisless/form-wrap.png") left top; }
+#clubfinderform 			{width:980px;margin:10px auto 0;background-color: #000;overflow:hidden;}
+#clubfinderform label 		{float:left;width:400px;padding:20px 30px 28px;color:#fff;font: 130% "HelveticaNeueW01-BdExt",Helvetica,Arial,sans-serif;background:url("../img/moreisless/clubfinder.png") right top no-repeat #1a1a1a;}
+#clubfinderform label span 	{display:block;font-size:74%;}
+#clubfinderform input 		{float:left; width:469px; margin:28px 0 0 20px; padding:11px 0 12px 10px; border:1px solid #850000; color:#000; font-weight:bold; font-size:90%; }
+
+.pac-container				{border:1px solid #850000; border-top:1px solid #ccc; }
+.pac-item					{color:#4C4C4C; line-height:80%; padding:7px 9px 8px; }
+.pac-item:hover				{color:#fff !important; background:#AE0000 !important; } /* !imortant declarations required for ie7 */
+.pac-selected					{color:#fff; background:#ae0000; }
+
+.club-finder-results	{font-size:75%; }
+#result-filter  		{width:100%; overflow:hidden; margin:0 0 20px; }
+#result-filter li		{display:inline; float:left; width:152px; margin-right:1px; }
+#result-filter a		{display:block; padding:10px 0; font-weight:bold; color:#808080; text-align:center; border-bottom:3px solid #f2f2f2; background:#f2f2f2; }
+#result-filter .active, #result-filter a:hover, #result-filter a:focus {background:#e6e6e6; border-bottom:3px solid #a70000; color:#000; text-decoration:none; }
+
+.results-head 			{width:100%; overflow:hidden; border-bottom: 6px solid #000;}
+.results-head h3		{float: left; line-height: 38px; margin-bottom: 0;font-family:"HelveticaNeueW01-BdExt",Helvetica,Arial,sans-serif;font-weight:normal;}
+.view-links				{float: right;}
+.view-links a 			{display:inline-block; float:left; line-height:36px; margin-left:2px; color:#999; padding:2px 11px 0 32px; background:#f2f2f2 url("../img/moreisless/sprite.png") no-repeat; }
+.view-links a:hover		{text-decoration:none; }
+.clubs-list-view a 		{background-position:0 -40px; background-position:0 0; }
+.clubs-map-view a 		{background-position:0 -1px; }
+.clubs-list-view a.active, .clubs-list-view a:hover {background-color:#1a1a1a; color:#fff; background-position:0 -182px; }
+.clubs-map-view a.active, .clubs-map-view a:hover 	{background-color:#1a1a1a; color:#fff; background-position:0 -63px; }
+
+
+/* Results list */
+#results 				{width: 100%; padding: 18px 0 0;}
+.club-summary-wrap 		{float:left; margin-bottom:18px; }
+.club-summary			{float:left; padding:19px 10px; background:#f2f2f2; border:2px solid #e6e6e6; border-left:none; border-right:none; }
+.club-nearest .club-summary 		{position:relative; margin-top:12px; padding-top:28px; border-color:#ccc; }
+.club-summary .title-note 			{position:absolute; top:-7px; left:10px; display:inline-block; padding:0 5px 0 0; background:url("../img/moreisless/sprite.png") no-repeat 41px -251px; }
+.club-summary .title-note p			{background:#c00; color:#fff; font-weight:bold; margin:-1px 0 0; padding:5px 10px; }
+.club-summary .details-wrap			{clear:both; }
+.club-summary img 					{float: left; width: 180px; margin: 0 10px 0 0;}
+.club-summary .club-info 			{float:left; width:444px; }
+.club-summary .club-info p 			{margin:6px 0; }
+.club-summary .club-name			{float:left; width:320px; font-weight:bold; }
+.club-summary .club-name a 			{float:left; color:#c00; }
+.club-summary .club-distance		{float:right; width:108px; color:#666; font-size:95%; font-weight:bold; text-align:right; }
+.club-summary .club-type			{clear:both; float:left; width:320px; color:#1a1a1a; font-size:90%; font-weight:bold; }
+.club-summary .club-type span		{display:inline-block; margin-bottom:6px; color:#666; font-style:italic; font-weight:normal; }
+.club-summary .club-showmap			{float:right; width:108px; }
+.club-summary .club-showmap	a		{float:right; line-height:20px; font-size:92%; margin-top:2px; padding:0 0 0 25px; background:url("../img/moreisless/sprite.png") 0 -354px no-repeat; -moz-transition: color 0.25s ease-out 0s; color: #0C4F75; font-weight: bold; text-decoration: none; }
+.club-summary .club-showmap	a:hover {color:#000;text-decoration:underline;}
+.club-summary .club-address			{font-weight:normal; }
+.club-summary .club-contact			{clear:both; }
+.club-summary span.classic-note 	{color: #1a1a1a; font-size: 78%;}
+.club-summary span.classic-note em	{color: #666;}
+
+.info-panel				{float:right; width:234px; background:#1a1a1a; padding:15px; }
+.club-nearest .info-panel	{margin-top:12px; xxpadding:11px 15px 15px; }
+.save-from				{display:block; font-size:135%; color:#b3b3b3; }
+.price					{color:#fff; text-align:center; }
+.price-value			{font-size:350%; }
+.price .per-month		{display:block; color:#ccc; text-align:center; font:normal 95% Arial, sans-serif; background:url("../img/moreisless/line-through-memb.gif") no-repeat 0 9px; }
+.info-panel h3 			{margin:0 0 6px; font:normal 100% "HelveticaNeueW01-BdExt",Helvetica,Arial,sans-serif; }
+.club-nearest .info-panel h3 	{xxmargin:0 0 10px; }			
+.btn-membs				{ display:inline; background-color:#c00; border:1px solid #d63333; padding:3px 10px; color:#fff; text-shadow:1px 1px 0 #850000; -webkit-font-smoothing: subpixel-antialiased; font:124% "HelveticaNeueW01-77BdCn 692722",Helvetica,Arial,sans-serif; }
+.btn-membs:hover, a.btn-membs:focus 	{ color:#fff; background-color:#333; border:1px solid #5c5c5c; text-decoration:none; text-shadow:1px 1px 0 #000; }
+.btn-cta				{width:180px; color:#fff; display:inline-block; padding:10px 42px 11px 10px; border:1px solid #d63333; text-shadow:1px 1px 0 #850000; font:130% "HelveticaNeueW01-77BdCn 692722",Helvetica,Arial,sans-serif; background:#c00 url("../img/moreisless/sprite.png") right -412px no-repeat; }
+.ie6 .btn-cta			{background:#c00 url("../img/moreisless/sprite.gif") right -412px no-repeat; }
+.btn-cta:hover, .btn-cta:focus	{ background-color:#333; border:1px solid #5c5c5c; text-decoration:none; text-shadow:1px 1px 0 #000; background-position:right -453px; }
+
+
+/* Enquire now panel */
+#club-membs-detail h2.join 			{background:none; border-top:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; padding-top:15px; font-size:120%; color:#000;}
+#club-membs-detail h2.join span 	{color:#a70000;}
+#club-membs-detail .panel-left 		{width:450px; font-size:70%; }
+#club-membs-detail .panel-left p	{padding-right:20px;}
+#club-membs-detail .panel-left p a	{color:#0C4F75;font-weight:bold;text-decoration:none;}
+#club-membs-detail .panel-left p a:hover, #club-membs-detail .panel-left p a:focus	{color:#000;}
+#club-membs-detail .panel-left h3 		{margin:20px 0 10px;font: 112%/1.1 "HelveticaNeueW01-BdExt",Helvetica,Arial,sans-serif; }
+.membs-panel 					{position:relative; background:#f2f2f2; padding:20px; font-size:110%; overflow:hidden; }
+.membs-panel .membs-price 		{float:right; display:block; margin-right:-7px; padding-bottom:30px; font:960%/0.8 "HelveticaNeueW01-BdExt",Helvetica,Arial,sans-serif; color:#a70009; text-shadow:2px 2px 2px #fff;}
+.membs-panel .membs-type 		{float:left; width:140px; font-weight:bold; }
+.membs-panel .membs-price-small	{font-size:700%; }
+.membs-panel .membs-period 		{float:right; position:absolute; bottom:15px; right:20px; display:block; width:auto; font-weight:bold; }
+
+#club-membs-detail .panel-right	{width:430px; margin:20px 0; }
+.inner-form             		{display:block; position:relative; height:400px; }
+.inner-form .intro				{font-size:90%; }
+.panel-right h3					{background: #c00; color: #fff; font:95%/1.1 "HelveticaNeueW01-BdExt",Helvetica,Arial,sans-serif; padding: 11px 0 10px;text-align: center;}
+.panel-right .btns 				{bottom:18px; left:0; margin-top:0; }
+
+
+/* Thanks panel */
+.inner-thanks        {height:400px; position:relative; background:#c00 url("/va_campaigns/img/moreisless/bg.gif") 114px 120px no-repeat; }
+.inner-thanks h2     {padding-top:15px; border:none; color:#fff; font-size:110%; }
+.inner-thanks p      {font-size:90%; }
+
+ul#social                   {overflow:hidden;width:100%;padding:10px 0;}
+ul#social li                {color:#000;display:inline;float:left;}
+ul#social li.share-this     {width:90px;margin-right:10px;padding-top:4px;font-size:90%;font-weight:bold;}
+ul#social a 				{float:left;  width:26px; height:20px; overflow:hidden; margin-right:10px; font-size:60%;color:#fff; }
+ul#social a:hover			{text-decoration:none; border-bottom:none;}
+ul#social a.email span		{position:absolute; background: url(/va_campaigns/img/moreisless/email.gif) no-repeat 0 0;width:26px; height:20px; }
+.fb_edge_widget_with_comment {width:100px !important;}
+.twitter-share-button {width:68px !important;}
+
+
+/* Club Finder Results */
+#map-canvas				{float:left; width:914px; height:600px; border:2px solid #ccc; margin:4px 0 20px; }
+#map-canvas label		{width:auto; float:none; }
+
+.matching-club-note 	{width: 640px; float: left; background: #1A1A1A;}
+.matching-club-note p 	{color: #fff; font: bold 92% arial, sans-serif; line-height: normal; padding: 8px 10px 0; margin: 0;}
+
+.map-panels-holder 				{float:left; margin-top:20px; display: none;}		/* this will not be visible on live site and only required for holding map panels */
+.map-info-panel 				{float:left; position:relative; width:346px; padding:6px 10px 10px; border:2px solid #fff; background:#191919; }
+.panel-details-wrap 			{width:347px; overflow:hidden; }
+.map-info-panel img 			{float:left; margin:4px 10px 0 0; }
+.map-info-panel .club-info 		{float:left; width: 156px; }
+.map-info-panel .club-info h5 	{margin:0 0 4px; font-size:108%; }
+.map-info-panel .club-info h5 a	{color:#fff; }
+.map-info-panel .club-info h5 a:hover		{color:#c00; }
+.map-info-panel .club-info p 				{color:#b2b2b2; font-size:95%; margin: 0 0 4px; line-height:normal; }
+.map-info-panel .club-info .club-contact 	{color:#e6e6e6; margin-bottom:0; }
+.map-info-panel ul							{float:left; width:100%; margin-top:12px; padding:5px 0; text-align:center; font-size:84%; color:#999; border-top:1px solid #999; border-bottom:1px solid #999; }
+.map-info-panel .club-activities li						{float:none; display:inline; line-height:18px; padding:2px 6px 0 25px; margin:0 5px 0 0; font-size:95%; font-weight:bold; border-right:1px solid #ccc; background:url("../images/icons/club-activities-icons.gif") 0 -212px  no-repeat; }
+.map-info-panel .club-activities .activity-adults-only	{background-position:0 -241px; }
+.map-info-panel .club-activities .activity-cafe 		{background-position:0 -271px; }
+.map-info-panel .club-activities .activity-spa	 		{background-position:0 -301px; }
+.map-info-panel .club-activities .activity-racquets 	{background-position:0 -331px; }
+.map-info-panel .club-activities .activity-golf 		{background-position:0 -361px; }
+.map-info-panel .club-activities .activity-kids 		{background-position:0 -391px; }
+.map-info-panel .close 			{position:absolute; top:6px; right:5px; width:10px; height:10px; cursor:pointer; background:url("/va_campaigns/img/moreisless/sprite.png") -11px -293px no-repeat; }
+.map-info-panel .arrow-down 	{position:absolute; left:0; bottom:-11px; width:100%; height:12px; overflow:hidden; background:url("/va_campaigns/img/moreisless/sprite.png") 50% -531px no-repeat; }

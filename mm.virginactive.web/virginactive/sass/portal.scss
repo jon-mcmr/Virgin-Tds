@@ -1,0 +1,354 @@
+@import "compass/css3/border-radius";
+
+/* Reset */
+
+html {
+	overflow-y: scroll;
+}
+html, body, h1, h2, h3, h4, h5, h6, p, li {
+	margin:0;
+	padding:0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, .menu, .nav, .section {
+	display:block;
+	margin:0;
+	padding:0;
+	border:0;
+}
+img {
+	border:0;
+}
+fieldset, form, legend {
+	margin:0;
+	padding:0;
+	border:0;
+}
+dl, dt, dd {
+	margin:0;
+}
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	color:#333;
+	font:62.5%/1.231 arial, sans-serif;
+	background:url(../images/global/body-bg.gif) repeat;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+.wrapper {
+	position:relative;
+	width:100%;
+}
+
+.wrapper.main{
+	background:url(../images/global/bg-repeat.gif) repeat;
+	border-bottom: 1px solid #e6e4e5;
+}
+
+#content {
+	width:980px;
+	margin:0 auto;
+	padding-bottom:0px;
+	background:url(../images/portal/map-trans.png) -50px 0 no-repeat; /* IE */
+}
+.aside {
+	padding-top: 30px;
+	width:980px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.header {
+	width:650px;
+	margin:0 auto;
+	text-align: center;
+}
+h1 {
+	margin-top:35px;
+	text-align:center;
+}
+h2 {
+	margin:40px 0;
+	font-family:"HelveticaNeueW01-BdExt", Helvetica, Arial, sans-serif;
+	font-weight:normal;
+	color:#b3b3b3;
+	font-size:2.6em;
+	text-shadow:2px 2px 0 #fff;
+}
+h3 {
+	margin-bottom:20px;
+	color:#808080;
+	font-family:"Futura W01 Bold", Helvetica, Arial, sans-serif;
+	font-size:1.4em;
+	font-weight:normal;
+	text-transform:uppercase;
+	text-align:center;
+}
+h4 {
+	font-family:"HelveticaNeueW01-BdExt", Helvetica, Arial, sans-serif;
+	color:#c00;
+	font-size:1.6em;
+	font-weight:normal;
+	text-align:center;
+}
+h4 a {
+	display:block;
+	color:#c00;
+	text-decoration:none;
+}
+h4 a:hover {
+	color:#000;
+}
+.section {
+	width:840px;
+	margin:50px auto;
+	position: relative;
+}
+.section div {
+	float:left;
+}
+
+.section div div{
+	float: none;
+}
+
+.section div.africa,  .section div.australasia {
+	width:150px;
+}
+.section div.europe {
+	width:540px;
+}
+ul {
+	overflow:hidden;
+	margin:0 30px 0 50px;
+}
+h4 a {
+	background-image:url(../images/portal/portal-sprite.png);
+	background-repeat:no-repeat;
+	padding-top:50px;
+}
+ul li {
+	float:left;
+	width:105px;
+	overflow:hidden;
+}
+a.sa {
+	background-position:50% -20px;
+}
+a.it {
+	background-position:50% -127px;
+}
+a.es {
+	background-position:50% -236px;
+}
+a.po {
+	background-position:50% -343px;
+}
+a.uk {
+	background-position:50% -450px;
+}
+a.au {
+	background-position:50% -560px;
+}
+
+.clubs{
+	margin-top:	15px;
+	font-size: 1.2em;
+	text-align: center;
+	
+	div.dropdown{
+		background: #e0e0e0 url('../images/global/club_dropdown_arrow.png') right center no-repeat;
+		display: inline-block;
+		width: auto;
+		padding: 6px 22px 6px 8px;
+		margin: 0 auto;
+		cursor: pointer;
+		text-align: left;
+		color: #666;
+		
+		&.active{
+			background-color:#fff;
+			border-bottom: 1px solid #d8d1d5;
+			padding-bottom: 5px;
+		}
+	}
+	
+	div.list{
+		text-align: left;
+		z-index: 9999;
+		position: absolute;
+		left: 0px;
+		top: 145px;
+		width: 100%;
+		background: url('../images/global/club_list_arrow.png') 0 10px no-repeat;
+		overflow: hidden;
+		
+		.close{
+			background: url('/virginactive/images/global/club_list_close.gif');
+			position: absolute;
+			top: 30px;
+			right: 10px;
+			width: 8px;
+			height: 8px;
+			cursor: pointer;
+		}
+		
+		ul{
+			@include border-radius(4px, 4px);
+			display: block;
+			margin: 20px 0 0px;
+			padding: 16px;
+			background: #fff;
+			border-bottom: 3px solid #d8d1d5;
+			
+			li{
+				width: 33%;
+				font-size: 0.9em;
+				
+				a{
+					display: inline-block;
+					padding: 5px;
+					color: #0c4f75;
+					text-decoration: none;
+					
+					&:hover{
+						text-decoration:underline;
+					}
+				}
+			}
+		}
+	}
+}
+
+.ie7 .clubs div.list ul li a {
+	display: block;
+}
+
+.africa .clubs div.list{
+	background-position: 64px 10px;
+	
+}
+
+.italy .clubs div.list{
+	background-position: 242px 10px;
+}
+
+.spain .clubs div.list{
+	background-position: 347px 10px;
+}
+
+.portugal .clubs div.list{
+	background-position: 452px 10px;
+	li{
+		width: 25%;
+	}
+}
+
+.uk .clubs div.list{
+	background-position: 557px 10px;
+}
+
+.australasia .clubs div.list{
+	background-position: 755px 10px;
+	li{
+		width: 25%;
+	}
+}
+
+.no-js{
+	div.list{
+		display: none;
+	}
+
+	.clubs:hover{
+		div.dropdown{
+			background-color:#fff;
+			border-bottom: 1px solid #d8d1d5;
+			padding-bottom: 5px;
+		}
+		
+		div.list{
+			display: block;
+		}
+	}
+}
+
+.ie7 .clubs div.dropdown{
+	width: 56px;
+	display: block;
+}
+
+
+.aside h2 {
+	float:left;
+	margin:0 20px 0 0;
+	padding-right:20px;
+	min-height:84px;
+	font-size:3.4em;
+	text-align:right;
+	text-shadow:none;
+	border-right:6px solid #e6e6e6;
+}
+.aside h2{
+	margin-top: 0px!important;
+	margin-bottom: 0px!important;
+	&.members {
+		width:220px;
+	}
+	&.clubs {
+		width:90px;
+	}
+}
+
+.ie7 .aside h2{
+	margin-right: 20px;
+}
+
+h2 span {
+	font-family:"Futura W01 Medium", Helvetica, Arial, sans-serif;
+	text-transform:uppercase;
+	display:block;
+	font-size:0.4em;
+}
+.aside p {
+	width:520px;
+	margin:0 40px 10px 0;
+	float:left;
+	line-height:1.4em;
+	font-size:1.2em;
+	color:#666;
+}
+
+.footer {
+	width:860px;
+	margin:70px auto 40px;
+	clear:both;
+	
+	p {
+		font-size:1.1em;
+		color:#808080;
+	}
+}
+
+/* standard HTML5 boilerplate helper classes */
+@import "partials/_helpers.scss";

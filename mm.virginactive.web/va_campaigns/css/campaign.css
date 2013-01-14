@@ -1,0 +1,241 @@
+html {overflow-y: scroll; }
+html, body, h1, h2, h3, h4, h5, h6, p, li {margin:0; padding:0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block; margin:0; padding:0; border:0; }
+img						{border:0; display:block; }
+fieldset, form, legend 	{margin:0; padding:0; border:0; }
+ul						{list-style-type:none; margin:0; padding:0; }
+
+/* Basic */
+body 		{color:#333; font:13px/1.231 arial, sans-serif; /* 18px */ background:#f0f0f0 url("../img/bg.png") repeat; }
+h1			{font:300%/1.1 "HelveticaNeueW01-BdExt",Helvetica,Arial,sans-serif; }
+h2			{padding:11px 0 10px; color:#fff; background:#c00; text-align:center; font:95%/1.1 "HelveticaNeueW01-BdExt",Helvetica,Arial,sans-serif; }
+p			{margin-bottom:10px; }
+a			{color:#666; text-decoration:none; -webkit-transition:color .25s ease-out; -moz-transition:color .25s ease-out; -o-transition:color .25s ease-out; transition:color .25s ease-out; }
+a:hover, a:focus    {text-decoration:underline; outline:0; }
+.img-rep            {position:relative; overflow:hidden; }
+.img-rep .rep       {position:absolute; width:100%; height:100%; }
+.bold				{font-weight:bold; }
+input				{color:#4c4c4c; }
+::-webkit-input-placeholder {color:#c00; }
+:-moz-placeholder 			{color:#c00; }
+
+
+/* Page structure */
+article				{width:1020px; margin:0 auto; font-size: 138%;}
+#panel-wrap			{width:950px; overflow:hidden; margin:0 auto; padding:56px 0 35px; }
+#panel-left			{float:left; width:455px; margin-top:22px; }
+#panel-right		{float:right; width:430px; height:528px; position:relative; z-index:30; padding:25px; background:url("/va_campaigns/img/my-story/photo-bg.png") no-repeat; }
+footer 				{clear:both; width:100%; border-top:1px solid #e6e6e6; background:#f2f2f2; }
+#overlay			{display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#161616; opacity:0.9; z-index:20; }
+.ie6 #overlay 		{position:absolute; background:#161616; height:expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px'); }
+.ie6 #va-overlay 	{position:absolute; //margin-top:expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px'); }
+
+
+/* Common styling */
+.inner					{height:528px; background:#1a1a1a; }
+.intro					{padding:15px 15px 5px; color:#f2f2f2; font-size:78%; }
+.btns					{width:430px; overflow:hidden; position:absolute; bottom:42px; left:25px; }
+.btn					{display:inline-block; background:url("../img/arrow.png") no-repeat; }
+.btn a 					{display:inline-block; padding:10px 12px 11px 10px; color:#fff; text-shadow:1px 1px 0 #850000; font:100% "HelveticaNeueW01-77BdCn 692722",Helvetica,Arial,sans-serif; border:1px solid #D63333; background-color:#c00; }
+.btn a:hover, .btn a:focus	{text-decoration:none; color:#fff; border:1px solid #5c5c5c; text-decoration:none; text-shadow:1px 1px 0 #000; background-color:#333; }
+.ie6 .btn				{background:url("/va_campaigns/img/arrow.gif") no-repeat; }
+.btn-start				{position:absolute; bottom:42px; left:25px; margin-bottom:0; padding-left:17px; background-color:#900000; background-position:6px 18px; }
+.btn-start a			{padding-right:42px; background:#c00 url("../img/btn.png") right 11px no-repeat; }
+.btn-start a:hover		{background-position:right -30px; }
+.ie6 .btn-start			{display:inline; background-image:url("../img/arrow.gif"); }
+.ie7 .btn-start			{display:inline; }
+.btn-prev				{float:left; padding-left:15px; background-color:#333; background-position:5px -102px; }
+.btn-prev a				{color:#999; text-shadow:1px 1px 0 #242424; background:#404040; border:1px solid #404040; }
+.btn-prev a:hover, .btn-prev a:focus	{color:#999; }
+.btn-next, .btn-submit		{float:right; padding-right:15px; background-color:#900000; background-position:right 18px; }
+.btn-next a, .btn-submit a	{color:#fff; text-shadow:1px 1px 0 #850000; background:#c00; border:1px solid #D63333; }
+.btn-next a:hover, .btn-next a:focus, .btn-submit a:hover, .btn-submit a:focus	{color:#fff; }
+.btn-disabled			{background-color:#333; }
+.btn-disabled a, .btn-disabled a:hover, .btn-disabled a:focus	{background-color:#333; border:1px solid #5c5c5c; text-shadow:1px 1px 0 #000; color:#999; cursor:default; }
+
+#logo					{width:380px; height:62px; margin-left:50px; }
+#logo a                	{color:#c00; font-size:135%; text-transform:uppercase; }
+#logo .rep				{background:url("/va_campaigns/img/logo.gif") no-repeat; }
+#speech-bubble          {position:relative; width:311px; margin:0 0 48px 50px; padding:19px 0 34px 44px; color:#fff; border-radius:16px 16px 16px 16px; background:#c00; }
+#speech-bubble-arrow	{position:absolute; bottom:-18px; right:0; width:20px; height:36px; background:url("/va_campaigns/img/my-story/speech-bubble-arrow.gif") right bottom no-repeat; }
+.no-borderradius #speech-bubble			{background:#c00 url("/va_campaigns/img/my-story/speech-bubble.gif") no-repeat; }
+.no-borderradius #speech-bubble-arrow	{right:0; width:355px; background:#c00 url("/va_campaigns/img/my-story/speech-bubble-arrow.gif") no-repeat; }
+.ie6 #speech-bubble-arrow				{right:-1px; }
+#panel-left .intro		{width:375px; margin-bottom:10px; padding:0 80px 17px 0; color:#333; font:normal 130%/1.1 "HelveticaNeueW01-BdExt",Helvetica,Arial,sans-serif; border-bottom:6px solid #d9d9d9; background:url("/va_campaigns/img/my-story/bg.gif") 402px -428px no-repeat; }
+
+.inner-form				{display:none; }
+.inner-form .intro		{text-align:center; }
+.inner-form .row		{float:left; width:430px; margin-bottom:20px; }
+.inner-form .row-chzn	{margin-bottom:15px; }
+.inner-form label		{float:left; display:inline-block; width:140px; margin:8px 0 0 15px; color:#ccc; font-size:67%; font-weight:bold; }
+.text					{float:left; width:248px; padding:5px; border:1px solid #999; font:bold 78% arial, sans-serif; }
+.error					{font-weight:normal; color:#c00; background:#fbd0cd; border:1px solid #c00; }
+.ie .inner-form label	{margin-top:7px; }
+.divider				{margin-top:20px; border-top:1px solid #404040; }
+.row-checkbox, .row-declaration			{padding:9px 0 10px; border-top:1px solid #404040; border-bottom:1px solid #404040; }
+.row-checkbox label		{float:left; width:375px; margin:1px 0 0 10px; }
+.row-declaration label	{float:left; width:400px; margin:1px 0 0 10px; }
+.row-checkbox input		{float:left; margin:2px 0 0 15px; }
+.file-upload			{position:relative; width:260px; height:29px; padding:0; text-align:right; opacity:0; z-index:2; }
+.file-upload-wrap		{position:relative; }
+.styled-upload			{position:absolute; top:0; left:155px; z-index:1; }
+.styled-upload input	{float:left; width:177px; margin-right:10px; padding:5px; border:1px solid #999; font:bold 78% arial, sans-serif; }
+.styled-upload .styled-btn	{display:inline-block; padding:9px 10px; color:#ccc; font-size:50%; text-transform:uppercase; background:#404040; }
+.upload-error input, .upload-error-noplaceholder	{font-weight:normal; background:#fbd0cd; border:1px solid #c00; }
+.styled-upload ::-webkit-input-placeholder 			{color:#808080; font-weight:normal; }
+.styled-upload :-moz-placeholder 					{color:#808080; font-weight:normal; }
+.upload-error ::-webkit-input-placeholder 			{color:#c00; }
+.upload-error :-moz-placeholder 					{color:#c00; }
+
+.inner-thanks			{display:none; background:#c00 url("/va_campaigns/img/my-story/bg.gif") 70px 200px no-repeat; }
+.inner-thanks h2		{width:368px; padding:30px 20px 10px; text-align:left; font-size:133%; }
+.inner-thanks p			{width:368px; margin-left:20px; padding:0; color:#fff; font:105%/1.1 "HelveticaNeueW01-LtExt",Helvetica,Arial,sans-serif; }
+#close					{float:right; width:40px; height:20px; }
+#close a				{color:#fff; font-size:67%; }
+#close .rep				{background:url("/va_campaigns/img/my-story/bg.gif") left -580px no-repeat; }
+
+#footer-list				{width:950px; margin:0 auto; padding:20px 0 100px; }	
+#footer-list li				{display:inline; padding-left:11px; font-size:0.67em; color:#666; background:url("/va_campaigns/img/footer-list-divider.gif") left 2px no-repeat; }
+#footer-list li:first-child	{background:none; padding:0; }
+
+
+/* Content - Feedback campaign */
+.inner-carousel			{xxdisplay:none; background:#000; }
+#carousel               {position:relative; width:430px; height:465px; overflow:hidden; }
+#carousel li 			{position:absolute; top:0; left:0; display:block; }
+.caption				{display:none; position:relative; float:left; margin:-29px 0 0; padding:8px 16px 7px; color:#fff; font-size:67%; background:rgb(20, 20, 20); background:rgba(20, 20, 20, 0.8); }
+.caption .highlight		{font-weight:bold; text-transform:uppercase; }
+.quote					{display:none; clear:both; width:398px; padding:12px 16px; color:#ededed; font:88%/1.3 Georgia,"Times New Roman",Times,serif; }
+
+.inner-story			{display:none; }
+textarea				{width:388px; height:338px; margin:0 15px 12px; padding:5px; background:#e6e6e6; border:1px solid #ccc; font:78% arial, sans-serif; }
+
+.inner-check			{display:none; }
+.inner-check .box		{width:378px; margin-left:15px; padding:6px 10px 0; color:#fff; border:1px solid #333; }
+.inner-check .box-story		{height:211px; background:#0d0d0d; font-size:78%; overflow-y:scroll; }
+.inner-check .box-details	{margin:12px 0 13px 15px; padding-bottom:4px; background:#262626; }
+.box .intro				{padding:0; text-align:left; color:#fff; font:78% "HelveticaNeueW01-BdExt",Helvetica,Arial,sans-serif; }
+.box .row				{width:400px; overflow:hidden; margin-bottom:4px; color:#ccc; font-size:67%; }
+.box .row p				{margin-bottom:0; }
+.box .left				{float:left; width:104px; font-weight:bold; }
+.box .right				{float:left; }
+
+/* Content - Static campaign */
+.inner-static			{xxdisplay:none; background:#000; }
+.inner-static img		{cursor:pointer; }
+
+footer{
+	font-size: 138%;
+}
+
+
+/** Campaign specific styles
+**********************************/
+
+/* Your story */
+.feedback-yourstory .inner-form .intro	{clear:both; padding:16px 15px 7px; color:#fff; text-align:left; font:78%/1.1 "HelveticaNeueW01-BdExt",Helvetica,Arial,sans-serif; }
+
+/* Men's Health */
+
+.static-mensfitness{
+	font-size: 138%;
+}
+.static-mensfitness h1 					{font-size:300%; }
+.static-mensfitness .inner-form .intro	{margin-bottom:50px; padding:20px 15px 25px; border-bottom:1px solid #404040; }
+.static-mensfitness .inner-form .row-checkbox	{margin-top:35px; }
+.static-mensfitness .inner-thanks h2 	{font-size:108%; }
+
+.static-standard{
+	font-size: 138%;
+}
+.static-standard h1 					{font-size:300%; }
+.static-standard .inner-form .intro	{margin-bottom:50px; padding:20px 15px 25px; border-bottom:1px solid #404040; }
+.static-standard .inner-form .row-checkbox	{margin-top:35px; }
+.static-standard .inner-thanks h2 	{font-size:108%; }
+
+/* Refer a Friend */
+.static-referafriend .inner-form .intro	{margin-bottom:50px; padding:20px 15px 15px; border-bottom:1px solid #404040; }
+.static-referafriend h1             { font-size:340%;text-align:center; }
+.static-referafriend #speech-bubble { padding:15px 22px 30px; }
+.static-referafriend .inner-form .row-declaration	{margin-top:10px; }
+
+/* End of Campaign */
+#campaign-end               		{ width:100%;overflow:hidden; position:relative; font-size: 138%;}
+#campaign-end header                { width:900px;margin:40px auto 0;}
+#campaign-end footer                { position:fixed; bottom:0;text-align:center; font-size: 100%;}
+#campaign-end footer #footer-list   {padding:20px 0;}
+#campaign-end #logo					{ margin:0 auto; width:452px; height:27px; }
+#campaign-end #logo .rep			{ background:url("/va_campaigns/img/campaign-end-logo.gif") no-repeat; }
+#campaign-end #content              { width:900px; overflow:hidden; margin:90px auto 40px; padding:0 0 62px; background:url(/va_campaigns/img/campaign-end-hero.png) left top no-repeat; }
+#campaign-end h1, #campaign-end p   { margin:-5px 0 20px 345px;text-shadow:0 2px 0 #fff;line-height:1.2em; }
+#campaign-end h1                    { font-size:182%;}
+#campaign-end h1 span               { color:#c00;}
+#campaign-end p                     { font:108% "HelveticaNeueW01-LtExt",Helvetica,Arial,sans-serif;}
+#campaign-end .footer-cta           { margin:55px 0 0 0;background: #2C2C2C; border-top:1px solid #2c2c2c;clear:both;display: block; overflow: hidden; padding: 15px; }
+#campaign-end .footer-cta p         { float:left;margin:10px 0 0;text-shadow:none;color:#FFFFFF;font:108% "HelveticaNeueW01-BdExt",Helvetica,Arial,sans-serif;}
+#campaign-end .footer-cta p.cta     { float: right; margin-top: 0; font-size: 108%; }
+#campaign-end .footer-cta p a       { float: right;  width: 188px;}
+#campaign-end .btn-cta-big          { background: url("/virginactive/images/icons/btns.png") no-repeat scroll right -61px #c00; display: inline-block; font-size: 108%; padding: 10px 42px 11px 10px;}
+#campaign-end .btn-cta-big:hover	{ background-position:right -102px; color:#fff; background-color:#333; border:1px solid #5c5c5c; text-decoration:none; text-shadow:1px 1px 0 #000; }
+#campaign-end .btn                  { background-color: #c00; border: 1px solid #D63333; color: #FFFFFF; display: inline; font: 87% "HelveticaNeueW01-77BdCn 692722",Helvetica,Arial,sans-serif; padding: 10px; text-shadow: 1px 1px 0 #850000; }
+
+
+
+
+
+/** Plugin styles
+**********************************/
+
+/* Scroller: jsScrollPane */
+.jspContainer			{overflow:hidden; position:relative; }
+.jspPane				{position:absolute; }
+.jspVerticalBar			{position:absolute; top:0; right:0; width:16px; height:100%; }
+.jspCap					{display:none; }
+.jspTrack				{background:#626262; position:relative; }
+.jspDrag				{background:#242424; position:relative; top:0; left:0; cursor:pointer; border:1px solid #333; border-right:0; }
+.jspArrow				{height:16px; background:#50506d; text-indent:-20000px; display:block; cursor:pointer; }
+.jspArrow.jspDisabled	{cursor:default; background:#80808d; }
+.jspArrow:focus			{outline:none; }
+.jspCorner				{background:#eeeef4; float:left; height:100%; }
+.ie6 .jspCorner			{margin:0 -3px 0 0; }
+
+/* Chzn */
+select.chzn-clublist		{xxdisplay:none; width:260px; font:bold 78% arial, sans-serif; border:1px solid #999; color:#4c4c4c; }
+.chzn-container				{position:relative; display:inline-block; zoom:1; *display:inline; z-index:10; }
+.chzn-container .chzn-drop 	{position:absolute; top:29px; left:0; background:#fff; border:1px solid #aaa;border-top:0; z-index:999; -webkit-box-shadow:0 4px 5px rgba(0,0,0,.15); -moz-box-shadow:0 4px 5px rgba(0,0,0,.15); -o-box-shadow:0 4px 5px rgba(0,0,0,.15); box-shadow:0 4px 5px rgba(0,0,0,.15); }
+.chzn-container-single .chzn-single {display:block; overflow:hidden; position:relative; height:28px; line-height:28px; padding:0 0 0 6px; white-space:nowrap; color:#808080; background-color:#fff; border:1px solid #999; text-decoration:none; 
+  background-image:-webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(0.5, white));
+  background-image:-webkit-linear-gradient(center bottom, #eeeeee 0%, white 50%);
+  background-image:-moz-linear-gradient(center bottom, #eeeeee 0%, white 50%);
+  background-image:-o-linear-gradient(top, #eeeeee 0%,#ffffff 50%);
+  background-image:-ms-linear-gradient(top, #eeeeee 0%,#ffffff 50%);
+  background-image:linear-gradient(top, #eeeeee 0%,#ffffff 50%);
+  -moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box; }
+.chzn-error .chzn-single					{background:#FBD0CD; color:#c00; font-weight:normal; border:1px solid #c00; }
+.chzn-container-single .chzn-single span 	{margin-right:26px; display:block; overflow:hidden; white-space:nowrap; font-size:78%; font-weight:bold; color:#4c4c4c; }
+.chzn-error .chzn-single span				{background:#FBD0CD; color:#c00; font-weight:normal; }
+.chzn-container-single .chzn-single span.placeholder	{color:#808080; }
+.chzn-container-single .chzn-single div 	{position:absolute; right:0; top:0; display:block; height:100%; width:27px; -moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box; }
+.chzn-container-single .chzn-single div b 	{display:block; width:100%; height:100%; background:url("/va_campaigns/img/my-story/chosen-sprite.png") -73px -72px no-repeat; }
+.chzn-container-single .chzn-search 		{padding:3px 4px; margin:0; white-space:nowrap; }
+.chzn-container-single .chzn-search input 	{margin:1px 0; padding:4px 20px 4px 5px; outline:0; border:1px solid #aaa; font:78% sans-serif;
+  background: #fff url("/va_campaigns/img/my-story/chosen-sprite.png") no-repeat 125% -19px;
+  background: no-repeat 125% -19px url("/va_campaigns/img/my-story/chosen-sprite.png?#iefix"), -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
+  background: no-repeat 125% -19px url("/va_campaigns/img/my-story/chosen-sprite.png?#iefix"), -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background: no-repeat 125% -19px url("/va_campaigns/img/my-story/chosen-sprite.png?#iefix"), -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background: no-repeat 125% -19px url("/va_campaigns/img/my-story/chosen-sprite.png?#iefix"), -o-linear-gradient(bottom, white 85%, #eeeeee 99%);
+  background: no-repeat 125% -19px url("/va_campaigns/img/my-story/chosen-sprite.png?#iefix"), -ms-linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  background: no-repeat 125% -19px url("/va_campaigns/img/my-story/chosen-sprite.png?#iefix"), -ms-linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  background: no-repeat 125% -19px url("/va_campaigns/img/my-story/chosen-sprite.png?#iefix"), linear-gradient(top, #ffffff 85%,#eeeeee 99%); }
+.chzn-container-single .chzn-drop 		{-moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box; border-top:1px solid #999; }
+.chzn-container .chzn-results			{position:relative; clear:both; margin:0 4px 4px 0; max-height:190px; overflow-x:hidden; overflow-y:auto; padding:0 0 0 4px; font-size:78%; }
+.chzn-container-multi .chzn-results		{margin:-1px 0 0; padding:0; }
+.chzn-container .chzn-results li 		{padding:4px 7px 5px; margin:0; list-style:none; color:#4c4c4c; }
+.chzn-container .chzn-results .active-result 	{cursor:pointer; }
+.chzn-container .chzn-results .highlighted 		{color:#fff; background:#AE0000; }
+.chzn-container .chzn-results li em 			{font-style:normal; font-weight:bold; }
+.chzn-container .chzn-results .highlighted em 	{background:transparent; color:#fff; }
+.chzn-container .chzn-results .no-results 		{margin-top:4px; background:#e6e6e6; }
+.chzn-container .chzn-results .group-result 	{cursor:default; color:#999; font-weight:bold; }
+.chzn-container-multi .chzn-drop .result-selected {display:none; }
+

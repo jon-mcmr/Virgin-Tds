@@ -1,0 +1,39 @@
+/* TEAM */
+                       
+Development & Design: McCormack & Morrison
+Contact: hello at mccormackmorrison.com                               
+Twitter: @mmcda                        
+Location: London, UK
+
+                         
+/* SITE */
+                    
+Last update: 24/09/2011 
+Doctype: HTML5                        
+Built with: C# .NET 3.5, HTML5, CSS3, jQuery, Modernizr, Google Maps API      
+CMS: Sitecore 6.5.0
+Software: Visual Studio.NET 3.5, Git 
+Language: English
+
+
+/* THANKS */ 
+Peter McCormack
+Oliver Morrison
+
+Project Management:
+Tim Peacock
+Paul Halfpenny
+Holly Bearne
+
+Development:
+Jon Beveridge
+Richard Dias
+Sophie Mitchell
+Sam Seaman
+
+Design:
+Ian Rotea
+Daliang Yang
+
+IA:
+Michael Ings

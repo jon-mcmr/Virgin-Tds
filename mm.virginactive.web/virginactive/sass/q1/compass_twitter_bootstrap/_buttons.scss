@@ -1,0 +1,74 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+.btn {
+	display: inline;
+	background-color: #c00;
+	border: 1px solid #d63333;
+	padding: 3px 10px;
+	color: #fff;
+	text-shadow: 0px -1px 0 #850000;
+	-webkit-font-smoothing: subpixel-antialiased;
+	font: 1.6em "HelveticaNeueW01-77BdCn 692722", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	outline: none;
+
+	&:hover, &.loading{
+		background: #333333;
+		border: 1px solid #999999;
+		color: #fff;
+		text-decoration: none;
+		text-shadow: none;
+	}
+
+	&.search{
+		background: #4d4d4d url('../../images/ppc/backgrounds/bg_search_btn.png') 0 center no-repeat;
+		padding-left: 30px;
+		text-shadow: none;
+		border: 1px solid #333333;
+		color: #cccccc;
+		text-transform: uppercase;
+		font-size: 1.4em;
+
+		&:hover{
+			background-color: #333;
+		}
+	}
+
+	&.medium {
+		display: inline-block;
+		padding: 10px 42px 11px 10px;
+		font-size: 2em;
+		background: #c00 url("../../images/ppc/btns.png") right -61px no-repeat;
+
+		&:hover, &.loading{
+			background: #333333 url("../../images/ppc/btns.png") right -102px no-repeat;
+		}
+	}
+
+	&.large {
+		display: inline-block;
+		padding: 0px 74px 0px 20px;
+		line-height: 70px;
+		font-size: 2.8em;
+		background: #c00 url("../../images/ppc/large_btns.png") right 16px no-repeat;
+	
+		&:hover{
+			background: #333333 url("../../images/ppc/large_btns.png") right -45px no-repeat;
+		}
+	}
+}
+
+p{
+	.btn{
+		&.large{
+			font-size: 2.1em;
+		}
+	}
+}

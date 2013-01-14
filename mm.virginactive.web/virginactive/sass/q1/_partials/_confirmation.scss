@@ -1,0 +1,139 @@
+.content.confirmation{
+	//Confirmation page wrappers
+	background: url('../../images/ppc/backgrounds/bg_by_numbers.gif') 0 0 repeat;
+	padding: 40px 0;
+	h2{
+				font-size: 2em;
+			}
+
+
+	.thank_you{
+		text-align: center;
+
+		h1{
+			color: #000;
+			text-shadow: none;
+			font-size: 3.6em;
+			margin-bottom: 20px;
+		}
+
+		p{
+			font-size: 2em;
+			margin-bottom: 20px;
+		}
+	}
+
+	.info_strip,.in_touch,.two_col_blocks,.share_bar, .twitter{
+		border-left: 1px solid #D9D9D9;
+		border-right: 1px solid #D9D9D9;
+		background: #fff;
+	    margin: 0 auto;
+	    width: 980px;
+	}
+
+	.info_strip{
+		background: url('../../images/ppc/backgrounds/bg_info_strip_confirmation.png') 0 0 repeat;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+
+		p{
+			font-size: 2.6em;
+			margin-bottom: 5px;
+			font-weight: normal;
+			font-family: 'Futura W01 Bold', $sansFontFamily;	
+			text-transform: uppercase;
+		}
+	}
+
+	.in_touch{
+		padding: 30px 0 40px;
+
+		img{
+			border:4px solid #ffffff;
+			width: 160px;
+			height: 160px;
+			margin: 16px;
+		}
+
+		.manager{
+			height: 200px;
+			width: 200px;
+			background: #f4f4f4;
+			float: left;
+			margin-right: 20px;
+		}
+
+		.intro{
+			p{
+				font-size: 1.8em;
+			}
+		}
+	}
+
+	.two_col_blocks{
+
+		.container{
+			border-top: 1px solid #f2f2f2;
+			border-bottom: 1px solid #f2f2f2;
+		}
+	}
+
+	.section.twitter{
+		margin-bottom: 0px;
+		padding-top: 0px;
+		border-bottom: 1px solid #D9D9D9;
+
+		.container{
+			margin: 0px;
+			padding: 20px 20px;
+		}
+
+		.user{
+			padding-left: 10px;
+		}
+
+		.span9{
+			width: 720px;
+			.tweet{
+				width: 658px;
+				position:relative;
+			}
+		}
+
+		h2{
+			margin: 20px;
+		}
+	}
+
+	.share_bar{
+		padding-bottom: 30px; 
+
+		h2{
+			margin-bottom: 15px;
+		}
+
+		ul{
+			margin:0px auto;
+			width: 232px;
+
+			li{
+				list-style: none;
+				float: left;
+				overflow: hidden;
+
+				&.social-twitter{
+					width: 82px;
+				}
+
+				&.social-facebook{
+					width: 85px;
+				}
+
+				&.social-googleplus{
+					width: 65px;
+				}
+			}
+		}
+	}
+	
+}

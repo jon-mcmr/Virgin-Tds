@@ -1,0 +1,314 @@
+/* Print styles for virgin active */
+
+@media print {
+	* {
+		background: transparent;
+		color: black;
+		text-shadow: none;
+		filter: none;
+		-ms-filter: none;
+	} /* Black prints faster: sanbeiji.com/archives/953 */
+	thead {
+		display: table-header-group;
+	} /* css-discuss.incutio.com/wiki/Printing_Tables */
+	tr, img {
+		page-break-inside: avoid;
+	}
+	@page {
+	margin:0.5cm;
+	}
+	p, h2, h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2, h3 {
+		page-break-after: avoid;
+	}
+	header, footer {
+		display: none;
+	}
+	#skiplinks {
+		display: none;
+	}
+	#reveal {
+		display: none;
+	}
+	#searchbar {
+		display: none;
+	}
+	#carousel-wrap {
+		display: none;
+	}
+	.layout {
+		border: 0;
+	}
+	#wrapper {
+		width: 700px;
+		min-width: 670px;
+	}
+	.container {
+		width: 700px;
+		margin: 0;
+	}
+	#content {
+		float: none;
+		margin: 0;
+		padding: 20px 0 0;
+	}
+	
+	/* Print club timetables */
+	
+	#clubs {
+		margin-top: 0 !important;
+		text-align: left;
+		background-color: transparent;
+	}
+	#clubs h1 {
+		color: #000;
+	}
+	#clubs .subnav {
+		width: 670px;
+	}
+	#clubs .subnav a {
+		font-size: 108%;
+		padding: 0 16px 0 0;
+	}
+	#clubs .sub-subnav {
+		display: none;
+	}
+	#timetable-filter {
+		display: none;
+	}
+	#clubs .homeclub {
+		display: none;
+	}
+	#clubs .icon-list {
+		display: none;
+	}
+	#clubs .manager {
+		display: none;
+	}
+	#clubs .map-overlay-parent {
+		display: none;
+	}
+	#clubs .multi-access {
+		display: none;
+	}
+	.subnav{
+		display: none;
+	}
+	
+	.subnav a.active {
+		color: #c00;
+	}
+	.sub-subnav a.active {
+		color: #c00;
+	}
+	#primary-l {
+		width: 700px;
+		float: none;
+	}
+	.calendar {
+		float: none;
+		width: auto;
+		border-bottom: 2px solid #E6E6E6;
+		padding-bottom: 5px!important;
+		margin-bottom: 10px!important;
+		display: block;
+		height: auto!important;
+		text-align: left!important;
+	}
+	.calendar .day {
+		width: auto;
+		display: inline;
+	}
+	.calendar .date {
+		width: auto;
+		display: inline;
+	}
+	.timetable {
+		width: 700px;
+		float: none;
+	}
+	.timetable table {
+		width: 700px;
+		float: none;
+		
+		.classtip{
+			display: none;
+		}
+	}
+	
+	.timetable .column-centre {
+		margin-left: 0px;
+	}
+	
+	.timetable .classdetails .classname {
+		float: none;
+	}
+	
+	.timetable .timetable-col1 {
+		width: 37px;
+	}
+	.timetable .timetable-col2 {
+		width: 37px;
+	}
+	.timetable .classdetails {
+		width: 175px;
+	}
+	.timetable .timetable-col4 {
+		width: 50px;
+	}
+	.timetable .timetable-col5 {
+		width: 50px;
+	}
+	.timetable th, .timetable td {
+		padding: 7px 0px 7px 0!important;
+		height: auto!important;
+		text-align: center!important;
+	}
+	aside {
+		width: 700px;
+	}
+	.btn {
+		display: none;
+	}
+	aside .cta-panel {
+		width: 700px;
+		padding: 0;
+	}
+	aside p.call {
+		width: 700px;
+		padding: 3px 0;
+		border-top: 2px solid #E6E6E6;
+		border-bottom: 2px solid #E6E6E6;
+	}
+	aside .findus {
+		width: 700px;
+	}
+	
+	aside .info p.icon-tube {
+		padding-left: 0px!important;
+		background: none;
+	}
+	
+	/* Print map overlay on club pages */
+	
+	.hasMapOverlay form {
+		display: none;
+	}
+	.hasMapOverlay #va-overlay-bg {
+		display: none !important;
+	}
+	.hasMapOverlay #va-overlay {
+		left: 0 !important;
+		top: 0;
+		position: static;
+	}
+	.hasMapOverlay #va-overlay #overlay {
+		float: none;
+		box-shadow: 0 !important;
+	}
+	.hasMapOverlay .map-overlay {
+		padding: 0 !important;
+	}
+	.hasMapOverlay .close-overlay {
+		display: none !important;
+	}
+	.hasMapOverlay #title-wrap {
+		width: 700px;
+	}
+	.hasMapOverlay #title-wrap ul {
+		display: none !important;
+	}
+	.hasMapOverlay .get-directions-title {
+		display: none !important;
+	}
+	.hasMapOverlay .get-directions {
+		display: none !important;
+	}
+	.hasMapOverlay .tab-detail {
+		display: block !important;
+	}
+	.map-overlay .aside {
+		float: none;
+	}
+	.hasMapOverlay #primary-r {
+		clear: both;
+		float: none;
+		margin: 0 !important;
+	}
+	.hasMapOverlay .map-overlay #map-large {
+		position: absolute;
+		top: 5px;
+		left: 0;
+		width: 700px;
+		height: 636px;
+	}
+	.hasMapOverlay .map-overlay .lower-panel {
+		position: absolute;
+		top: 750px;
+		left: 0;
+	}
+	.hasMapOverlay .map-overlay .lower-panel .tab-upper {
+		width: 700px;
+	}
+	.hasMapOverlay .tab-lower .location {
+		float: left;
+		width: 250px;
+	}
+	.hasMapOverlay .tab-lower .directions {
+		float: left;
+		width: 450px;
+	}
+	.hasMapOverlay .map-overlay .directions-tab {
+		text-align: left;
+	}
+	.hasMapOverlay .map-overlay .lower-panel h3 a {
+		padding-left: 0;
+	}
+	.hasMapOverlay .map-overlay .lower-panel .active {
+		background: transparent;
+	}
+	.hasMapOverlay .map-overlay .lower-panel h3.address-tab {
+		width: 250px;
+	}
+	.hasMapOverlay .map-overlay .lower-panel h3.directions-tab {
+		width: 450px;
+	}
+	.hasMapOverlay .map-overlay .location li.marker {
+		background: none;
+	}
+	.hasMapOverlay .map-overlay .location li {
+		margin-bottom: 0;
+		padding-left: 0;
+		border-bottom: 0;
+	}
+	.hasMapOverlay .map-overlay .directions-list {
+		height: auto !important;
+	}
+	.hasMapOverlay .map-overlay .directions-list li {
+		width: 420px;
+	}
+	
+	tr, td, p, li, h1, h2, h3,h4, h5{
+		color: #000!important;
+	}
+	
+	.timetable-wrap{
+		tr, td, th, table{
+			border: 0px #fff solid!important;
+		}
+	}
+	
+	.timetable-col6{
+		text-indent: -99999px;
+		
+	}
+	.timetable-wrap a, .timetable-wrap .column-centre{
+		display: none;
+		text-indent: -99999px;
+	}
+	
+	
+}

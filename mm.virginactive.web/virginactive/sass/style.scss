@@ -1,0 +1,60 @@
+﻿/* Compass */
+@import "compass";
+
+/* Variables */
+@import "partials/_variables.scss";
+
+/* Import the reset file */
+@import "partials/_reset.scss";
+
+/* Import animations */
+@import "partials/generic/_animations.scss";
+	
+/* Import layouts */
+@import "partials/_layout.scss";
+
+@import "partials/generic/_overlays.scss";
+
+@import "partials/_general_pages.scss";
+
+@import "partials/_active_matters.scss";
+
+@import "partials/_facilities_classes.scss";
+
+@import "partials/_membership.scss";
+
+@import "partials/_club.scss";
+
+@import "partials/_forms.scss";
+
+@import "partials/_club_finder.scss";
+
+@import "partials/_navigation.scss";
+
+@import "partials/_cookies.scss";
+
+@import "partials/campaigns/_indoor_tri.scss";
+
+@import "partials/_blog.scss";
+
+/* Import media queries */
+@import "partials/_mediaqueries.scss";
+
+/* Import Print styles. Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/ */
+@import "partials/_print.scss";
+
+/* standard HTML5 boilerplate helper classes */
+@import "partials/_helpers.scss";
+
+
+
+@media only screen and (device-width: 768px) and (orientation: landscape) {
+	.iPad #carousel-wrap ul li img{
+
+		display: block;
+		height: auto!important;
+		width: 1100px!important;
+		left: -40px!important;
+
+	}
+}

@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="FeedbackFrame.ascx.cs" Inherits="mm.virginactive.web.layouts.virginactive.club.FeedbackFrame" %>
+<asp:PlaceHolder ID="PagePh" runat="server" />

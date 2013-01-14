@@ -1,0 +1,493 @@
+html  {overflow-y:scroll; }
+body  {width:100%; margin:0; padding:0; font:75% Arial,helvetica,verdana,sans-serif; background:#f0f0f0 url("img/bg.png") repeat; }
+
+/* Fonts */
+@font-face{
+  font-family:'HelveticaNeueW01-BdExt';
+  src:url('/virginactive/fonts/7d6c3b9e-86b7-44dd-9e46-8ab30da85834.eot?iefix') format('eot');}
+@font-face{
+  font-family:'HelveticaNeueW01-BdExt';
+  src:url('/virginactive/fonts/7d6c3b9e-86b7-44dd-9e46-8ab30da85834.eot?iefix');
+  src:url('/virginactive/fonts/a0cf2f5e-c70c-45a8-a420-4143b3afb187.woff') format('woff'),url('/virginactive/fonts/c7acfb18-afc1-4a67-a281-baa1130b7baa.ttf') format('truetype'),url('/virginactive/fonts/3799441c-73d4-4e5f-8a55-456233b45f0e.svg#3799441c-73d4-4e5f-8a55-456233b45f0e') format('svg');
+}
+
+@font-face{
+  font-family:'HelveticaNeueW01-77BdCn 692722';
+  src:url('/virginactive/fonts/83d5bc89-af33-46a9-8fe3-15d87784f50e.eot?iefix') format('eot');}
+@font-face{
+  font-family:'HelveticaNeueW01-77BdCn 692722';
+  src:url('/virginactive/fonts/83d5bc89-af33-46a9-8fe3-15d87784f50e.eot?iefix');
+  src:url('/virginactive/fonts/102ab74c-0e84-4fe5-a17a-b20fb643591a.woff') format('woff'),url('/virginactive/fonts/1d146b29-55e2-485b-96aa-5cb628e7e9eb.ttf') format('truetype'),url('/virginactive/fonts/d90b3358-e1e2-4abb-ba96-356983a54c22.svg#d90b3358-e1e2-4abb-ba96-356983a54c22') format('svg');
+}
+
+#Body   {margin:auto; width:590px; }
+
+.SmallDivider {
+  background:#e7e7e7;
+  border-top:1px solid #bfbfbf;
+}
+
+/* Banner */
+#Banner {
+}
+#Banner img     {display:none; }
+
+#BannerPartnerLogo {
+  float:right;
+  margin:0px 8px 0px 0px;
+}
+
+#BannerLogo {
+  width:146px;
+  height:38px;
+  margin:11px 0px 0px 16px;
+}
+
+#LoginLabel1 {
+  color:#666666;
+  font-size:small;
+  font-weight:bold;
+  font-family: Tahoma, Verdana, Arial, Sans-Serif;
+  padding:0px 0px 1px 0px;
+}
+
+#LoginLabel2 {
+  color:#666666;
+  font-size:small;
+  font-weight:bold;
+  font-family: Tahoma, Verdana, Arial, Sans-Serif;
+  padding:6px 0px 0px 0px;
+}
+
+#Remember {
+  font:9pt verdana;
+}
+
+
+#LoginText {
+  color:red;
+  font:12px Arial,helvetica,verdana,sans-serif
+}
+
+#LoginOptions {margin:8px 0 0; padding:8px 0 0; }
+
+a.LoginOption,
+a.LoginOption:link,
+a.LoginOption:visited,
+a.LoginOption:hover,
+a.LoginOption:active {
+  font:bold 8pt arial;
+  color:#c73318;
+  padding:2px 6px 4px 6px;
+  text-decoration:none;
+  white-space:nowrap;
+}
+
+a.LoginOption:hover,
+a.LoginOption:active {
+  text-decoration:underline;
+}
+
+#BasicMoreOptions {
+  margin:8px 32px 0px 32px;
+  padding:8px;
+  border:1px solid #e0e0e0;
+  background:#fbfbfb;
+}
+
+#BasicMoreOptions a { font-weight: bold; }
+#BasicMoreOptions a:hover, #BasicMoreOptions a:active {}
+
+#SitecoreLink {display:none; border-top:1px solid #bfbfbf; padding:16px 0px 16px 0px; text-align:center; font:bold 15px Arial, Verdana, Sans-Serif; }
+
+#SitecoreLink a {
+  text-decoration:none;
+  color:#c73318;
+}
+
+#SitecoreLink a:hover {
+  text-decoration:underline;
+}
+
+/* Content area */
+
+#MainPanel {
+  background:white;
+  margin:10px 0px 0px 0px;
+  border-bottom:4px solid #bfbfbf;
+  height:400px;
+}
+
+#Right {display:none; float:right; width:239px; background:#f5f5f5; }
+
+#SystemInformation {
+  font:8pt arial, verdana, sans-serif;
+  background:white;
+  color:#333333;
+  height:195px;
+  margin:8px 6px 0px 8px;
+  padding:0px 4px 4px 4px;
+  border:1px solid #d5d5d5;
+}
+
+#SystemInformation div {
+  padding:8px 0px 8px 0px;
+}
+
+.SystemInformationDivider {
+  border-top:1px dotted #cccccc;
+}
+
+#SDN {
+  margin:0px 0px 0px 0px;
+  border-bottom:4px solid #bfbfbf;
+  background:#f5f5f5;
+  height:410px;
+  width:239px;
+}
+
+#StartPage {
+  border:1px solid #d5d5d5;
+  height:392px;
+  width:223px;
+  margin:8px;
+  background:white;
+}
+
+/* Options */
+
+.OptionBox {
+  text-align:center;
+}
+
+.OptionBoxTitle {
+  font-size:x-large;
+  padding:16px 0px 16px 0px;
+}
+
+.OptionBoxHelp {
+  color:#666666;
+  padding:0px 16px 16px 16px;
+}
+
+.OptionBoxOptions {
+  font-size:x-large;
+}
+
+.OptionBoxOptions button {
+  background:transparent;
+  border:1px solid #cccccc;
+}
+
+.OptionBoxOptions button.OptionBoxOptionsActive {
+  background:#E6F4FF;
+  border:1px solid #80C9FF;
+}
+
+#BasicOptions img {
+  width:225px;
+  height:140px;
+  display:block;
+}
+
+#BasicOptions button {
+  width:250px;
+  height:180px;
+  margin:8px;
+}
+
+#AdvancedOptions button {
+  font:10pt tahoma;
+  color:#333333;
+  padding:0px;
+  height:40px;
+  margin:0px 8px 0px 8px;
+}
+
+.OptionLabel {
+  font:8pt tahoma;
+  color:#666666;
+}
+
+.OptionBoxOptions button:hover {
+  background:#BFE4FF;
+  border:1px solid #6096BF;
+}
+
+#AdvancedOptions img {
+  width:24px;
+  height:24px;
+  margin:2px 0px 2px 4px;
+  vertical-align:middle;
+}
+
+/* Login Options */
+
+#LanguagePanel {
+  padding:16px 0px 0px 0px;
+  font:8pt tahoma;
+  text-align:center;
+  clear:both;
+}
+
+#Language {
+  font:10pt tahoma;
+}
+
+/* Full Panel */
+
+#FullPanel {
+  width:800px;
+}
+
+#FullTopPanel {
+  background:white;
+  border-bottom:4px solid #bfbfbf;
+  text-align:center;
+}
+
+.FullTitle {
+  font-size:x-large;
+  padding:16px 0px 0px 0px;
+}
+
+.FullText {
+  font-size:Medium;
+  color:#666666;
+  padding:16px 0px 16px 0px;
+}
+
+.Button {
+  border:1px solid #999999;
+  background:transparent;
+  display:block;
+  text-align:left;
+  margin:16px 0px 16px 0px;
+  width:260px;
+}
+
+#FullPanel img {
+  width:32px;
+  height:32px;
+  margin:0px 4px 0px 4px;
+  float:left;
+}
+
+#FullPanel button:hover {
+  background:#BFE4FF;
+  border:1px solid #6096BF;
+}
+
+.FullButtonHeader {
+  font-size:Medium;
+  color:#6096BF;
+}
+
+.FullButtonText {
+  font-size:smaller;
+  color:#999999;
+}
+
+.Centered {
+  text-align:center;
+}
+
+/* Error */
+
+#ErrorPanel {
+  background:white;
+  margin:10px 0px 0px 0px;
+  border-bottom:4px solid #bfbfbf;
+  height:400px;
+  color:#666666;
+  font-size:small;
+  padding:16px;
+}
+
+#ErrorTopPanel {
+  background:white;
+  border-bottom:1px solid #bfbfbf;
+}
+
+.ErrorTitle {
+  font-size:x-large;
+  padding:16px;
+  height:48px;
+}
+
+.ErrorOptions {
+  padding:8px 0px 8px 0px;
+}
+
+.ErrorOption {
+  text-decoration:none;
+  color:#0066B3;
+}
+
+.ErrorOption:hover {
+  text-decoration:underline;
+}
+
+.ErrorMoreOptionPanel {
+  margin:32px 0px 0px 0px;
+}
+
+#ErrorMorePanel {
+  padding:0px 0px 0px 28px;
+}
+
+#ErrorMorePanel div {
+  padding:8px 0px 8px 0px;
+}
+
+/* Single Panel */
+#SinglePanel {
+  background:white;
+  border-bottom:4px solid #bfbfbf;
+  height:400px;
+  padding:0px 16px 0px 16px;
+}
+
+#DialogButtons {
+  padding:16px 0px 0px 0px;
+  text-align:right;
+}
+
+#DialogButtons button{
+  font:8pt tahoma;
+  width:75px;
+  height:25px;
+  margin:0px 0px 0px 8px;
+}
+
+.DialogTitle {
+  font-size:x-large;
+  padding:8px 0px 16px 0px;
+  height:48px;
+}
+/* SITECORE LOGIN CUSTOM VIRGINACTIVE STYLES  -------------------------------------- */
+#Menu{width:410px;height:80px;margin:60px 0 10px 92px;background:url(img/admin-login.gif) no-repeat;overflow:hidden}
+#LoginTitle{border-bottom: 1px solid #333333;font: 21px HelveticaNeueW01-BdExt;padding: 22px 0 5px 25px;text-align: left; text-indent: -9000px;}
+#Login{display:block;}
+
+/* top level table elements */
+#Left{width:590px;padding-bottom:120px}
+#LoginPanelOuter{width:548px;padding:20px;color:#fff;background:#fff;border:1px solid #dcdcdc;margin-top:35px;display:block;}
+#LoginPanel{position: relative; width:547px;background:#191919 url(img/bg-text-login.gif) 20px 20px no-repeat;color:#fff;border:1px solid #dcdcdc;margin:0;text-align:center;display:block}
+#LoginPanelBox{padding:0;padding:0 25px 0;width:495px; }
+#Login-table{margin-top:20px;display:block}
+#BasicMoreOptions{background-color:transparent;margin:0;border:none;padding:0 25px 20px;width:490px}
+.OptionBox{text-align:right}
+.textbox-container { position: relative; margin-bottom: 10px; }
+.asterisk { position:absolute; top:9px; right:-10px; font-size: 15px; }
+
+/* misc styles */
+.hidden{display:none!important;visibility:hidden}
+.clearfix:before,.clearfix:after{content:"";display:table}
+.clearfix:after{clear:both}
+.clearfix{zoom:1}
+
+/* LOGIN FORM FIELDS                               -------------------------------------- */
+#Login_UserName,#Login_Password{width:316px;padding:6px;border:1px solid #999}
+#UserNameLabel,#PasswordLabel,.OptionLabel{display:block;height:30px;line-height:3em;padding:0;text-align:left;vertical-align:bottom;width:160px;font:13px Arial,helvetica,verdana,sans-serif;font-weight:700;color:#FFF; line-height: 2.5em;}
+.input-username{}
+.input-password{}
+.input-checkbox{display:block;}
+.input-checkbox input{margin-right:10px;position:relative;top:2px}
+#Login label{font-weight:700;font-size:13px}
+.input-submit{font:16px "HelveticaNeueW01-77BdCn 692722",Helvetica,Arial,sans-serif;color:#FFF;text-align:left;background:#c00 url('img/btns.png') no-repeat scroll right -68px;width:120px;height:32px;padding:4px 10px 6px;display:block;border:1px solid #d63333;cursor:pointer; text-shadow: 1px 1px 0 #850000;}
+.input-submit:hover{background-color:#333;border:1px solid #666;background-position: right -109px;text-shadow: 1px 1px 0 #666;}
+#LoginPanel .input-submit { position: absolute; bottom:25px; right:25px; }
+
+/* LOGIN LINKS                               -------------------------------------- */
+#LoginText { line-height: 3em; }
+.LoginText1 { padding-top:35px; }
+.LoginText2 { padding-bottom:35px; }
+#LoginOptions { bottom: 32px; left: 20px; margin: 0; position: absolute; text-align: left; }
+#LoginOptions a { color: #CCC; font: 12px Arial,helvetica,verdana,sans-serif; }
+
+/* OPTIONS                                  -------------------------------------- */
+#LoginPanel.options-open #LoginText {padding:0 }
+#LanguagePanel{color:#FFF;padding: 10px 0 75px;}
+#Language{width:330px!important;float:right}
+select#Language{float:left}
+.OptionLabel{float:left;width:155px;line-height:2.5em}
+.OptionSelect{float:right;width:auto;text-align:left}
+a#options-text{position:absolute;top:200px;right:25px;background:url(img/open-close-arrows.png) right 5px no-repeat;padding-right:20px;color:#CCC;cursor:pointer;text-decoration:none}
+button.close-text{position:absolute;bottom:70px;color:#CCC;right:25px;background:url(img/open-close-arrows.png) right -5px no-repeat;padding-right:15px;border:none;cursor:pointer;width:60px;font:13px Arial,helvetica,verdana,sans-serif;}
+a#options-text:hover,button.close-text:hover{text-decoration: underline;}
+.UIPanel {margin:8px 0; overflow: hidden; }
+#AdvancedOptions button{border:none;color:#FFF;cursor:pointer;text-align:left;height:auto;font:13px Arial,helvetica,verdana,sans-serif;font-weight:bold;background:url(img/sprite-radiobtn.gif) 0 3px no-repeat;padding: 0 0 0 19px; float:left; display: block; margin:0 5px 0 0;line-height: 1.5em; }
+#AdvancedDesktop{ margin-left:160px !important; width:87px; }
+#AdvancedContentEditor{ width:130px;  }
+#AdvancedWebEdit{margin-right:0 !important; width:100px;}
+#AdvancedOptions button:hover{color:#CCC}
+#AdvancedOptions button img{display:none}
+.OptionBoxOptions button.OptionBoxOptionsActive{background-position:0 -20px!important}
+
+/* chosen form plugin styles ------------------------------------------------------------           */
+.chzn-container{display:inline-block;position:relative;z-index:1}
+.chzn-container .chzn-drop{-moz-border-bottom-colors:none;-moz-border-image:none;-moz-border-left-colors:none;-moz-border-right-colors:none;-moz-border-top-colors:none;background:none repeat scroll 0 0 #FFF;border-color:0 #AAA;border-right:1px solid #AAA;border-style:none solid solid;border-width:0 1px 1px;box-shadow:0 4px 5px rgba(0,0,0,0.15);left:0;position:absolute;top:29px;z-index:999}
+.chzn-container-single .chzn-single{text-align:left; background-clip:padding-box;background-color:#FFF;background-image:none;border:1px solid #999;color:gray;display:block;height:28px;line-height:28px;overflow:hidden;padding:0 0 0 8px;position:relative;text-decoration:none;white-space:nowrap;font-family: sans-serif;}
+.select-row-error .chzn-container-single .chzn-single{background-color:#FBD0CD;background-image:none;border:1px solid #C00}
+.chzn-container-single .chzn-single span{color:#4C4C4C;display:block;font-size:108%;margin-right:26px;overflow:hidden;white-space:nowrap}
+.chzn-container-single .chzn-single span.placeholder{color:gray}
+.chzn-container-single .chzn-single div{background-clip:padding-box;display:block;height:100%;position:absolute;right:0;top:0;width:27px}
+.chzn-container-single .chzn-single div b{background:url(img/arrows.png) no-repeat scroll 0 -322px transparent;display:block;height:100%;width:100%}
+.chzn-container-single .chzn-search{margin:0;padding:3px 4px;white-space:nowrap}
+.chzn-container-single .chzn-search input{background:url(img/chosen-sprite.png) no-repeat scroll 100% -20px 0 repeat scroll 0 0 transparent;border:1px solid #AAA;font:1em sans-serif;margin:1px 0;outline:0 none;padding:4px 20px 4px 5px}
+.chzn-container-single .chzn-drop{background-clip:padding-box;border-top:1px solid #999}
+.chzn-container .chzn-results{clear:both;margin:0 4px 4px 0;max-height:190px;overflow-x:hidden;overflow-y:auto;padding:0 0 0 4px;position:relative}
+.chzn-container-multi .chzn-results{margin:-1px 0 0;padding:0}
+.chzn-container .chzn-results li{color:#4C4C4C;line-height:80%;list-style:none outside none;margin:0;padding:7px 7px 8px}
+.chzn-container .chzn-results .active-result{cursor:pointer}
+.chzn-container .chzn-results .highlighted{background:none repeat scroll 0 0 #AE0000;color:#FFF}
+.chzn-container .chzn-results li em{font-style:normal;font-weight:700}
+.chzn-container .chzn-results .highlighted em{background:none repeat scroll 0 0 transparent;color:#FFF}
+.chzn-container .chzn-results .no-results{background:none repeat scroll 0 0 #E6E6E6;margin-top:4px}
+.chzn-container .chzn-results .group-result{color:#999;cursor:default;font-weight:700}
+.chzn-container-multi .chzn-drop .result-selected{display:none}
+.enquiry-corporate .chzn-container-active{z-index:1000}
+.chzn-container-multi .chzn-choices{background:url(img/arrows.png) no-repeat scroll 390px -322px #FFF;border:1px solid #AAA;cursor:text;height:auto!important;margin:0;overflow:hidden;padding:0 26px 0 0;position:relative}
+.chzn-container-multi .chzn-choices li{float:left;list-style:none outside none}
+.chzn-container-multi .chzn-choices .search-field{white-space:nowrap}
+.chzn-container-multi .chzn-choices .search-field input{background:none repeat scroll 0 0 transparent!important;border:0 none!important;box-shadow:none;color:#666;outline:0 none;padding:5px}
+.chzn-container-multi .chzn-choices .search-field input:hover{cursor:pointer}
+.chzn-container-multi .chzn-choices .search-field .default{color:#999}
+.chzn-container-multi .chzn-choices .search-choice{border:1px solid #B4B4B4;border-radius:5px 5px 5px 5px;color:#4C4C4C;font-weight:700;line-height:13px;margin:3px 0 3px 5px;padding:3px 19px 3px 6px;position:relative}
+.chzn-container-multi .chzn-choices .search-choice span{cursor:default}
+.chzn-container-multi .chzn-choices .search-choice-focus{background:none repeat scroll 0 0 #D4D4D4}
+.chzn-container-multi .chzn-choices .search-choice .search-choice-close{background:url(img/chosen-sprite.png) no-repeat scroll right top transparent;display:block;font-size:1px;height:9px;position:absolute;right:5px;top:6px;width:8px}
+.chzn-container-multi .chzn-choices .search-choice .search-choice-close:hover{background-position:right -9px}
+.chzn-container-multi .chzn-choices .search-choice-focus .search-choice-close{background-position:right -9px}
+
+/* FORGOT PASSWORD & PASSWORD RECOVERY CUSTOM VIRGINACTIVE STYLES  -------------------------------------- */
+#FullPanel{background:none repeat scroll 0 0 #FFF;border:1px solid #DCDCDC;color:#FFF;display:block;margin-top:35px;padding:20px;width:548px}
+#FullTopPanel{position:relative;color:#FFF;background:#191919;border:1px solid #DCDCDC;color:#FFF;display:block;margin:0;text-align:center;width:545px;}
+#FullTopPanel .btn-back{color:#CCC;position:absolute;bottom:28px;left:30px;display:block;font:12px Arial,helvetica,verdana,sans-serif}
+.FullTitle{font:21px HelveticaNeueW01-BdExt;text-align:left;padding:22px 0 12px 25px;border-bottom:1px solid #333}
+
+#PasswordRecovery{text-align:left;color:#FFF;margin:20px 25px 20px 20px;width:515px;display:block; }
+.password-recovery #FullTopPanel .btn-back { left:25px; }
+#PasswordRecovery .success-text{}
+.password-recovery .label-text label {display:block;font:bold 13px Arial,helvetica,verdana,sans-serif;height:30px;margin-bottom:15px;padding:0;text-align:left;vertical-align:bottom;width:170px;color:#FFF;line-height:2em}
+#PasswordRecovery .text-box{border:1px solid #999;padding:6px;width:316px;margin-bottom:15px;}
+#PasswordRecovery .input-submit{margin:5px 7px 0 0;}
+#PasswordRecovery_UserNameContainerID_UserNameRequired { left:4px; position: relative; }
+
+.change-password #ChangePassword{text-align:left;color:#FFF;margin:20px 25px 50px;width:500px;display:block}
+.change-password .input-submit{position:absolute;bottom:20px;right:35px;width:180px;}
+.change-password .label-text label {display:block;font:bold 13px Arial,helvetica,verdana,sans-serif;height:30px;margin:0 0 14px 0;padding:0;text-align:left;vertical-align:bottom;width:170px;color:#FFF;line-height:3.5em}
+.change-password .text-box{border:1px solid #999;padding:6px;width:296px; margin-right:3px;}
+
+/* BROWSER SPECIFIC FIXES                                    -------------------------------------- */
+.ie8 .change-password .input-submit,
+.ie9 .change-password .input-submit {right:38px;}
+.ie .change-password .label-text label { margin: 9px 0 4px; line-height: 2em;}
+.ie #UserNameLabel,
+.ie #PasswordLabel,
+.ie .OptionLabel{ vertical-align: top; }
+.ie .change-password #ChangePassword { margin-bottom:60px; }
+.ie .change-password #FullTopPanel .btn-back { left: 25px; }
+
+

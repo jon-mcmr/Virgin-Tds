@@ -1,0 +1,172 @@
+.club{
+
+	.hero{
+		height: 300px;
+		.container{
+			height: 300px;
+
+			.row{
+				top: 105px;
+			}
+		}
+	}
+
+	.info_strip{
+		height: 113px;
+		background: url('../../images/ppc/backgrounds/bg_info_strip_club.png') 0 0 repeat;
+
+		h1{
+			text-transform: uppercase;
+			margin-bottom: 8px;
+		}
+
+		.container{
+			height: 100px;
+			position: relative;
+		}
+
+		p{
+			line-height: 25px;
+			font-size: 1.8em;
+		}
+
+		.btn{
+			position: absolute;
+			left: 0px;
+			bottom: 35px;
+		}
+	}
+
+	//Enquiry
+
+	.enquiry{
+		background: url('../../images/ppc/backgrounds/bg_video_demo.gif') 0 0 repeat;
+		padding: 40px 0 25px;
+
+		h2{
+			text-align:	left;
+			margin: 0px 0px 20px;
+			font-size: 2.2em;
+			line-height: 1em;
+			text-transform: none;
+		}
+
+		.image_block{
+			.span6{
+				margin-bottom: 20px;
+				border-top: 1px solid #cbc8c2;
+			}
+		}
+
+		fieldset{
+			background: #fff;
+			border: 1px solid #d9d9db;
+			padding: 25px 20px;
+			position: relative;
+			height: 301px;
+			position: relative;
+
+
+			p.error{
+				color: #c00;
+				padding-left: 134px;
+				margin-bottom: 0px;
+				margin-top: 5px;
+			}
+
+			.promo_roundel{
+				position: absolute;
+				width: 150px;
+				height: 150px;
+				right: 15px;
+				top: -100px;
+				z-index: 999
+			}
+
+			&:before{
+				content: '';
+				background: url('../../images/ppc/backgrounds/bg_form_corner.gif');
+				width: 15px;
+				height: 15px;
+				display: block;
+				position: absolute;
+				top: -1px;
+				right: -1px;
+			}
+
+			.form_row{
+				background: #f2f2f2;
+				border-bottom: 1px solid #e6e6e6;
+				padding: 10px;
+				margin-bottom: 2px;
+
+				&.valid{
+					background:url("../../images/icons/tick.png") no-repeat 388px 20px #F2F2F2;	
+				}	
+
+				label{
+					line-height: 26px;
+					width: 130px;
+					display: inline-block;
+					font-weight: bold;
+				}
+
+				input[type="text"]{
+					width: 220px;
+					padding: 5px;
+				}
+
+				input[type=text].error{
+					background:#f7d9d9;
+
+					&::-webkit-input-placeholder{
+						color:#cc0000;
+					}
+				}
+			}
+
+			.checkbox_row{
+				margin-top: 20px;
+				width: 300px;
+				position: absolute;
+				bottom: 20px;
+				left: 20px;
+
+				input, label{
+					float: left;
+				}
+
+				label{
+					width: 250px;
+					margin: -3px 0 0 10px;
+				}
+
+			}
+
+			input[type="submit"]{
+				margin-top: 20px;
+				position: absolute;
+				bottom: 20px;
+				right: 20px;
+			}
+		}
+
+		.address{
+			margin-top: 20px;
+			text-align: center;
+
+			p, li{
+				font-size: 1.4em;
+			}
+
+			ul{
+				margin: 0px;
+
+				li{
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,769 @@
+/*
+*
+* Facilities
+* & Classes
+*
+*/
+
+.item-classes {
+	width: 680px;
+	border-top: 1px solid #e6e6e6;
+	padding: 20px 0 10px;
+}
+.item-classes div {
+	overflow: hidden;
+}
+.item-classes img {
+	margin-right: 20px;
+}
+/* CMF Panel */
+
+.layout-inner-panels section.cmf-panel {
+	background: #1a1a1a;
+	width: 978px;
+	margin: 0 0 20px -4px;
+	padding: 15px 0 10px;
+	float: left;
+	clear: both;
+	font: bold 'Futura W01 Bold', Arial, sans-serif;
+	text-align: center;
+}
+.layout-inner-panels .cmf-panel div {
+	width: 315px;
+	float: left;
+	text-align: center;
+	margin-left: 10px;
+	padding-top: 5px;
+}
+.cmf-panel div.cardio {
+	width: 300px;
+}
+.cmf-panel div.strength {
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+}
+.cmf-panel div h3 {
+	padding: 2px 10px;
+	font-size: 108%;
+	color: #000;
+	display: inline-block;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.cmf-panel div.cardio h3 {
+	background: #ec1a37;
+}
+.cmf-panel div.strength h3 {
+	background: #ea8a2e;
+}
+.cmf-panel div.mind h3 {
+	background: #ffd300;
+}
+.cmf-panel p {
+	font-size: 93%;
+	color: #fff;
+}
+/* CMF dials */
+
+.cmf {
+	width: 100%;
+	overflow: hidden;
+}
+.cmf-wrap {
+	position: relative;
+	display: block;
+}
+.cmf-dial {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.percentage {
+	position: relative;
+	display: inline-block;
+	z-index: 11;
+}
+.cmf-rotator {
+	display: block;
+	position: absolute;
+	top: 0;
+	z-index: 3;
+}
+.cmf-inner {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	overflow: hidden;
+}
+.cmf-rotator.move {
+	left: 0
+}
+.classes-list .cmf-wrap {
+	top: 0;
+	left: 23px;
+	width: 42px;
+	height: 42px;
+	background: url("../images/cmf/cmf-classes.png") no-repeat;
+}
+.ie7 .classes-list .cmf-wrap {
+	left: 0;
+}
+.classes-list .cmf-dial {
+	width: 42px;
+	height: 42px;
+}
+.classes-list .percentage {
+	padding: 13px 0 0 1px;
+}
+.classes-list .unit {
+	font-size: 85%;
+}
+.classes-list .cmf-rotator {
+	width: 42px;
+	height: 42px;
+	left: -21px;
+	background: url("../images/cmf/cmf-classes.png") no-repeat;
+}
+.classes-list .cmf-inner {
+	width: 21px;
+	height: 42px;
+}
+.classes-list .cmf-move {
+	left: 0;
+	background: url("../images/cmf/cmf-classes.png") no-repeat;
+}
+.classes-list .card .cmf-rotator {
+	background-position: -84px 0;
+}
+.classes-list .card .cmf-move {
+	width: 42px;
+	background-position: -210px 0;
+}
+.classes-list .stre .cmf-rotator {
+	background-position: -126px 0;
+}
+.classes-list .stre .cmf-move {
+	width: 42px;
+	background-position: -252px 0;
+}
+.classes-list .mind .cmf-rotator {
+	background-position: -168px 0;
+}
+.classes-list .mind .cmf-move {
+	width: 42px;
+	background-position: -294px 0;
+}
+.ie9 .card .cmf-wrap, .no-csstransforms .card .cmf-wrap{
+	background-position: -378px 0;
+}
+.ie9 .stre .cmf-wrap, .no-csstransforms .stre .cmf-wrap{
+	background-position: -462px 0;
+}
+.ie9 .mind .cmf-wrap, .no-csstransforms .mind .cmf-wrap{
+	background-position: -546px 0;
+}
+.panel-inner .cmf {
+	margin-top: 20px;
+}
+.panel-inner .cmf li {
+	position: relative;
+	width: 33%;
+	float: left;
+	margin-right: 1px;
+	padding: 38px 0 5px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #666;
+	background: #f2f2f2;
+	font: 80% "HelveticaNeueW01-77BdCn 692722", Helvetica, Arial, sans-serif;
+}
+.panel-inner .ie6 .cmf li {
+	width: 32%;
+}
+.panel-inner .cmf li:last-child {
+	margin: 0;
+}
+.panel-inner .cmf-wrap {
+	width: 32px;
+	height: 32px;
+	margin-top: -46px;
+	padding-bottom: 15px;
+	background: url("../images/cmf/cmf-facilities.png") no-repeat;
+}
+.panel-inner .percentage {
+	font-size: 110%;
+	padding: 9px 0 0;
+	z-index: 20;
+}
+.panel-inner .unit {
+	font-size: 80%;
+	z-index: 20;
+}
+.panel-inner .cmf-dial {
+	width: 32px;
+	height: 32px;
+}
+.panel-inner .cmf-rotator {
+	width: 32px;
+	height: 32px;
+	left: -16px;
+	background: url("../images/cmf/cmf-facilities.png") no-repeat;
+}
+.panel-inner .cmf-inner {
+	width: 16px;
+	height: 32px;
+}
+.panel-inner .cmf-move {
+	left: 0;
+	background: url("../images/cmf/cmf-facilities.png") no-repeat;
+}
+.panel-inner .card .cmf-rotator {
+	background: url("../images/cmf/cmf-card.png") no-repeat;
+}
+.panel-inner .card .cmf-move {
+	left: 0;
+	width: 32px;
+	background: url("../images/cmf/cmf-card-50.png") repeat;
+}
+.panel-inner .stre .cmf-rotator {
+	background: url("../images/cmf/cmf-stre.png") no-repeat;
+}
+.panel-inner .stre .cmf-move {
+	left: 0;
+	width: 32px;
+	background: url("../images/cmf/cmf-stre-50.png") repeat;
+}
+.panel-inner .mind .cmf-rotator {
+	background: url("../images/cmf/cmf-mind.png") no-repeat;
+}
+.panel-inner .mind .cmf-move {
+	left: 0;
+	width: 32px;
+	background: url("../images/cmf/cmf-mind-50.png") repeat;
+}
+.ie7 .panel-inner .card .cmf-rotator, .ie8 .panel-inner .card .cmf-rotator {
+	background: url("../images/cmf/cmf-card.gif") no-repeat;
+}
+.ie7 .panel-inner .stre .cmf-rotator, .ie8 .panel-inner .stre .cmf-rotator {
+	background: url("../images/cmf/cmf-stre.gif") no-repeat;
+}
+.ie7 .panel-inner .mind .cmf-rotator, .ie8 .panel-inner .mind .cmf-rotator {
+	background: url("../images/cmf/cmf-mind.gif") no-repeat;
+}
+.full-panel .cmf-wrap {
+	left: 57px;
+}
+.half-panel .cmf {
+	width: 437px;
+}
+.half-panel .cmf-wrap {
+	left: 56px;
+}
+.third-panel .cmf-wrap {
+	left: 30px;
+}
+.quarter-panel .cmf-wrap {
+	left: 17px;
+}
+/* Landing/inner page templates */
+
+.layout-panels section, .layout-inner section {
+	margin: 0 0 20px 20px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	display: inline;
+}
+.layout-inner section {
+	margin: 0 0 30px 0;
+}
+.layout-panels .full-panel {
+	width: 938px;
+}
+.layout-panels .half-panel, .layout .half-panel {
+	width: 459px;
+	min-height:310px;
+}
+.layout-panels .third-panel {
+	width: 300px;
+}
+.layout-inner-panels section {
+	margin: 0 0 20px 34px;
+	float: left;
+	position: relative;
+	display: inline;
+}
+.layout-inner-panels section:last-child {
+	margin-bottom: 34px;
+}
+.layout-inner-panels .full-panel {
+	width: 902px;
+}
+.layout-inner-panels .half-panel {
+	width: 434px;
+}
+.layout-inner-panels .third-panel {
+	width: 278px;
+}
+.layout-inner-panels .quarter-panel {
+	width: 200px;
+}
+/* Landing page specific */	
+
+.section-image-panel {
+	position: relative;
+}
+.layout-panels section img {
+	margin-bottom: 10px;
+}
+.layout-panels a.arrow {
+	z-index: 1;
+	bottom: 13px;
+	position: absolute;
+}
+.layout-panels h2, .layout-panels h3 {
+	border-bottom: 6px solid #e6e6e6;
+	padding-bottom: 10px;
+}
+.layout-panels h2 a {
+	color: #1a1a1a;
+	font-weight: normal;
+}
+.layout-panels ul {
+	width: 100%;
+}
+.layout-panels li {
+	display: inline;
+	background: url(../images/icons/divider.png) right center no-repeat;
+	padding: 0 10px 0 0;
+}
+.layout-panels li:last-child {
+	background: none;
+}
+.layout-panels .item a {
+	color: #c00;
+	font-weight: normal;
+	font-size: 93%;
+	white-space: nowrap;
+}
+.layout-panels .full-panel p {
+	width: 460px;
+}
+.layout-panels .full-panel .fl {
+	width: 460px;
+	overflow: hidden;
+}
+.layout-panels .half-panel .fl {
+	width: 220px;
+}
+.layout-panels .half-panel p {
+	width: 221px;
+	float: right;
+	color: #666;
+}
+.layout-panels .third-panel .fl {
+	width: 144px;
+	padding-bottom: 80px;
+}
+.layout-panels .third-panel h2 {
+	font-size: 138.5%;
+}
+.layout-panels .third-panel p {
+	width: 145px;
+	color: #666;
+}
+.layout-panels .third-panel .fl li a {
+	white-space: normal;
+}
+.summary-text {
+	overflow: hidden;
+	float: right;
+	margin-top: 9px;
+}
+.layout-panels .half-panel .summary-text {
+	width: 224px;
+	margin-top: 9px;
+}
+.layout-panels .third-panel .summary-text {
+	margin-top: 3px;
+	width: 146px;
+}
+.half-panel .summary-text {
+	margin-top: 3px;
+}
+/* Inner page specific */
+
+.layout-inner-panels img, .layout-inner-panels .find-list {
+	margin-bottom: 10px;
+}
+.layout-inner-panels .full-panel img {
+	float: left;
+	margin-top: 4px;
+}
+.layout-inner-panels .full-panel .panel-inner {
+	width: 440px;
+	margin-left: 20px;
+	float: left;
+}
+.layout-inner-panels .full-panel .panel-inner img {
+	float: left;
+	margin: 10px 0;
+}
+.layout-inner-panels .full-panel .panel-content {
+	float: left;
+}
+.layout-inner-panels .panel-content {
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.layout-inner-panels .full-panel .find-list li, .layout-inner-panels .half-panel .find-list li {
+	display: inline;
+	border-left: 1px dotted #ccc;
+	margin: 10px 5px 0 0;
+	padding: 5px 0 5px 10px;
+}
+.layout-inner-panels .half-panel .panel-inner {
+	width: 245px;
+}
+.layout-inner-panels .half-panel img {
+	float: right;
+}
+.layout-inner-panels .half-panel .panel-inner img {
+	float: none;
+}
+.layout-inner-panels .third-panel .find-list li, .layout-inner-panels .quarter-panel .find-list li {
+	padding: 5px 0;
+	border-top: 1px dotted #ccc;
+}
+.layout-inner-panels .additional-panel {
+	clear: both;
+	width: 944px;
+	margin: 0 0 0 -4px;
+	padding: 20px 0 20px 34px;
+	border-top: 1px solid #e6e6e6;
+}
+.layout-inner-panels .full-panel-active .panel-inner {
+	margin: 0 20px 0 0;
+}
+.layout-inner-panels .full-panel-active h2 {
+	font: 200% arial, sans-serif;
+}
+.layout-inner-panels .full-panel-active .active {
+	width: 400px;
+	height: 131px;
+}
+.layout-inner-panels .full-panel-active .active span {
+	background: url("../images/title-active-academy.gif") no-repeat;
+}
+.layout-inner-panels .full-panel-active img {
+	float: right;
+}
+.layout-inner-panels .saq-panel {
+	clear: both;
+	width: 862px;
+	overflow: hidden;
+	margin: 20px 34px;
+	padding: 30px 20px;
+	background: #fbb03b;
+}
+.layout-inner-panels .saq-panel img {
+	float: left;
+	margin-top: 4px;
+}
+.layout-inner-panels .saq-panel .panel-inner {
+	float: left;
+	width: 738px;
+	margin-left: 24px;
+	display: inline;
+}
+/* Classes Inner template & Clubs Health & Beauty page */
+
+.width-full div.panel-content {
+	overflow: hidden;
+	margin: 0 30px 30px 0;
+}
+.width-full div.panel-content img {
+	float: left;
+	margin-right: 20px;
+}
+.width-full div.panel-content ul li  .width-full p.intro {
+	font-size: 123.1%;
+	color: #333;
+}
+.width-full div.list-container {
+	clear: both;
+	background: #f2f2f2;
+	margin: 0;
+	padding: 14px 0 10px;
+	float: left;
+	width: 908px;
+	position: relative;
+}
+
+/* Kids */
+
+.full-width-panel-layout section {
+	width:100%;
+	overflow:hidden;
+	clear:both;
+	border-bottom:1px solid #e6e6e6;
+}
+.full-width-panel-layout .full-width-panel-1 h2 {
+	margin-top:0;
+}
+.full-width-panel-layout section h2 span {
+	font:bold 62% Arial, sans-serif;
+	display:block;
+	color:#666;
+}
+.full-width-panel-layout section h2,  .full-width-panel-layout section h3,  .full-width-panel-layout section p {
+	margin:0 40px 10px 40px;
+}
+.full-width-panel-layout section h2 {
+	margin-top:40px;
+}
+.full-width-panel-layout section p.moreinfo {
+	overflow:hidden;
+}
+.full-width-panel-layout .full-width-panel-2,  .full-width-panel-layout .full-width-panel-3 {
+	background:url(../images/bg-kids-nursery.jpg) left top no-repeat;
+}
+.full-width-panel-layout .full-width-panel-4 {
+	background:url(../images/bg-kids-parties.jpg) left top no-repeat;
+}
+.full-width-panel-layout .full-width-panel-5 {
+	background:url(../images/bg-kids-pool.jpg) left top no-repeat;
+}
+.full-width-panel-layout section img {
+	margin-bottom:20px;
+}
+.full-width-panel-layout section p.moreinfo {
+	padding-bottom:20px;
+}
+.full-width-panel-layout .full-width-panel-5 img {
+	margin-bottom:50px;
+}
+.full-width-panel-layout .full-width-panel-2 img,  .full-width-panel-layout .full-width-panel-4 img {
+	float:right;
+	margin-left:15px;
+}
+.full-width-panel-layout .full-width-panel-1 img,  .full-width-panel-layout .full-width-panel-3 img,  .full-width-panel-layout .full-width-panel-5 img {
+	float:left;
+	margin-right:30px;
+}
+.full-width-panel-layout .full-width-panel-gold{
+	background: url('../images/sections/kids/bg_full_width_panel_gold.gif') 0 0 no-repeat;
+	min-height: 427px;
+}
+
+.full-width-panel-layout .full-width-panel-gold h2{
+	background: url('../images/sections/kids/header_going_for_gold.png') 0 0 no-repeat;
+	width: 679px;
+	height: 68px;
+	display: block;
+	margin: 82px auto 23px;
+}
+
+.full-width-panel-layout .full-width-panel-gold div,.full-width-panel-layout .full-width-panel-gold img{
+	float: left;
+}
+
+.full-width-panel-layout .full-width-panel-gold div{
+	width: 473px;
+	padding: 19px 20px 0 0;
+}
+
+.full-width-panel-layout .full-width-panel-gold div p{
+	font-size: 123.1%;
+	margin-right: 0px;
+}
+
+.full-width-panel-layout .full-width-panel-gold div .btn{
+	margin-left: 40px;
+}
+
+.people-wrap .highlight-panel {
+	clear: both;
+	float: left;
+	width: 920px;
+	margin-top: 20px;
+	padding: 15px 0 15px 20px;
+}
+
+.people-wrap .highlight-panel .content-panel {
+	width: 450px;
+	float: left;
+}
+
+.people-wrap .highlight-panel img {
+	float: right;
+}
+
+
+
+/* Global Health & Beauty */
+
+.layout-panels .third-panel .hb-offer,  .layout-panels .third-panel .hb-no-offer {
+	overflow: hidden;
+	position: relative;
+}
+.layout-panels .hb-offer span.img-note {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	background: #c00;
+	color: #fff;
+	font-family: "HelveticaNeueW01-77BdCn 692722", Helvetica, Arial, sans-serif;
+	font-size: 123.1%;
+	font-weight: normal;
+}
+.layout-panels .half-panel .hb-no-offer p {
+	width: 100%;
+	float: none;
+}
+.layout-panels .third-panel .offer {
+	margin-bottom: 10px;
+}
+.layout-panels .third-panel .hb-no-offer h3 {
+	min-height: 69px;
+}
+.layout-panels .third-panel .hb-offer h3 {
+	border-bottom: none;
+}
+.layout-panels .half-panel .hb-offer p,  .layout-panels .half-panel .hb-no-offer p,  .layout-panels .third-panel .hb-offer p,  .layout-panels .third-panel .hb-no-offer p {
+	width: 100%;
+}
+.layout-panels .hb-offer p.halfwidth-offer,  .layout-panels .hb-offer p.fullwidth-offer {
+	background: #e6e6e6;
+	padding: 10px;
+	overflow: hidden;
+	color: #736357;
+	font-size: 108%;
+	font-weight: normal;
+}
+.layout-panels .hb-offer p.fullwidth-offer {
+	width: 280px;
+}
+.layout-panels .hb-offer p.halfwidth-offer {
+	width: 129px;
+	float: left;
+}
+.layout-panels .hb-offer p.halfwidth-offer:first-child {
+	margin-right: 2px;
+}
+p.halfwidth-offer em, p.fullwidth-offer em {
+	background: none;
+	font-weight: bold;
+	font-style: normal;
+	float: right;
+}
+
+/* Personal Training */
+
+.facilities-pt section {
+	margin: 0 0 20px 0;
+	padding: 0 0 20px 0;
+}
+.facilities-pt section img {
+	float: right;
+}
+.facilities-pt .panel-content {
+	width: 445px;
+	margin: 0 20px 0 0;
+	float: left;
+}
+.facilities-pt h3 {
+	margin-top: 20px;
+}
+.facilities-pt .width-quarter {
+	width: 218px;
+	margin-left: 10px;
+	border-bottom: none;
+}
+.facilities-pt .width-quarter h4 {
+	font-size: 192.3%;
+	color: #000;
+	min-height: 70px;
+	padding-top: 10px;
+}
+.facilities-pt .width-quarter h4 strong {
+	float: left;
+	font-weight: normal;
+}
+.facilities-pt .width-quarter h4 span {
+	color: #CC0000;
+	float: right;
+	font-size: 60%;
+	margin: 0 8px 0 0;
+	line-height: 1.7em;
+	text-align: left;
+	width: 180px;
+}
+.facilities-pt .first {
+	margin-left: 0;
+}
+.facilities-pt .step {
+	background: url(../images/backgrounds/bg-pt-sprite.gif) right top no-repeat;
+}
+.facilities-pt .step p {
+	width: 200px;
+}
+.facilities-pt div div.pt-getfit {
+	width: 146px;
+	overflow: hidden;
+	margin-left: 1px;
+	float: left;
+}
+.facilities-pt .panel-content div.pt-getfit p {
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 78px;
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 146px;
+}
+.pt-getfit1 {
+	background: url(../images/backgrounds/bg-pt-sprite.gif) left top no-repeat #fff;
+}
+.pt-getfit2 {
+	background: url(../images/backgrounds/bg-pt-sprite.gif) -190px top no-repeat #fff;
+}
+.pt-getfit3 {
+	background: url(../images/backgrounds/bg-pt-sprite.gif) -380px top no-repeat #fff;
+}
+.footer-cta {
+	display: block;
+	background: #2c2c2c;
+	overflow: hidden;
+	margin: 0;
+	padding: 15px 20px;
+	border-top: 1px solid #e6e6e6;
+}
+.footer-cta p {
+	float: left;
+	margin: 10px 0 0;
+	color: #fff;
+	font: 153.9% "HelveticaNeueW01-BdExt", Helvetica, Arial, sans-serif;
+}
+.footer-cta p.cta {
+	float: right;
+	margin-top: 0px;
+	font-size: 123.1%;
+}
+.footer-cta p a {
+	float: right;
+	width: 200px;
+	background-position: right -58px;
+}
+.footer-cta p a:hover {
+	background-position: right -99px;
+}
+

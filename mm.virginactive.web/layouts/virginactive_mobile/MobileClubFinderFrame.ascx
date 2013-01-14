@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MobileClubFinderFrame.ascx.cs" Inherits="mm.virginactive.web.layouts.Mobile.MobileClubFinderFrame" %>
+<asp:PlaceHolder ID="PagePh" runat="server" />

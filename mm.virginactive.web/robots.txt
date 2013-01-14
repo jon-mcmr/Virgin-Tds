@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /more
+Disallow: /campaigns/mens-fitness
+Allow: /
+
+Sitemap: http://www.virginactive.co.uk/sitemap?ajax=1&cmd=XmlSitemap

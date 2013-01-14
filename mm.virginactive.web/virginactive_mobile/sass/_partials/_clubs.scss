@@ -1,0 +1,176 @@
+.club{
+
+	.map{
+
+		.data_footer{
+			padding:10px;
+			
+			a{
+				background: url('../img/icons/small_arrow_grey.png') no-repeat 0px center;
+				padding-left: 15px;
+				line-height: 18px;
+				display: inline-block;
+			}
+		}	
+	}	
+		
+	.map_content{
+		text-align:center;
+		margin:0px!important;
+
+		img{
+			width: 100%;
+		}
+	}
+
+	
+	.contact_info{
+		
+		.data_content{
+			p{
+				font-size:1.4em;
+			}
+			
+			p.address{
+			
+				margin:0px 0px 10px;
+
+			}
+		
+			p.openingtimes{
+			
+				margin:0px;
+			}
+		}
+		
+		.data_footer{
+			padding:10px;
+			
+			ul{
+				width:100%;
+				padding:0px;
+				margin:0px;
+				float:left;	
+			
+				li{
+					list-style:none;
+					color:#0071bc;
+					font-size:1.4em;
+					float:left;
+					-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+					-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+					box-sizing: border-box;         /* Opera/IE 8+ */
+					
+					&.phone{
+						width:60%;
+						float:left;
+						background: url('../img/icons/icon-phone.png') no-repeat 0px 2px;
+						padding-left: 20px;
+						height: 17px;						
+					}
+
+					&.contact_us{
+						width:40%;
+						float:left;
+						background: url('../img/icons/icon-contact.png') no-repeat 0 3px;
+						padding-left: 25px;
+						height:15px;	
+					}
+
+				}
+				
+				
+
+			}
+		}
+	}
+	
+}
+
+
+.day_classes{
+	.content.no-classes{
+		padding:0;
+	}
+	
+	.data_block{
+		margin:0;
+	}
+
+	.data_list{
+		.title{
+			color: #999999;
+			font-weight: bold;
+			font-size: 1.1em;
+			
+			strong{
+				color: #4d4d4d;
+				padding-left: 10px;
+			}
+		}
+		
+		.info{
+			span{
+				float: right;
+			}
+		}
+	}
+
+	a{
+		display: inline-block;
+		
+		&.previous{
+			background: url('../img/icons/class-prev.png') no-repeat left center;
+			padding-left: 15px;
+			float: left;
+		}
+		&.next{
+			background: url('../img/icons/class-next.png') no-repeat right center;
+			padding-right: 15px;
+			float: right;
+		}	
+	}
+
+	a.button{
+		display: block;
+	}
+	
+}
+
+
+.content.timetables-download{
+	.data_block{
+		background: #FFFFFF url('../img/icons/downloadpdf.png') no-repeat 10px 20px;
+		
+		.data_content{
+			h3{
+				margin:10px 0 0 0;
+			}
+
+			p{
+				margin:5px 0 5px 0;
+			}
+
+			.download-info{
+				padding-left:70px;
+			}
+		}	
+		.data_footer{
+			padding:10px;
+			
+			a.download{
+				background: url("../img/icons/icon_download.png") no-repeat 0px 3px;
+				padding-left: 15px;
+				line-height: 18px;
+				display: inline-block;
+			}
+		}	
+	}
+}
+
+.content.timetables{
+	h1.icon{
+		background:url('../img/icons/timetable_icon.png') no-repeat top center;
+		padding-top: 50px;
+	}
+}

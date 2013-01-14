@@ -1,0 +1,112 @@
+@media only screen and (max-width: 479px) {
+	.touch .membs-cta {
+		min-height: 210px;
+	}
+}
+
+@media only screen and (max-device-width: 480px) {
+/** All feedback and contact us form and confirmation pages */
+
+	.touch #searchbar .container fieldset {
+		display: none;
+	}
+	.club-summary .club-distance, .club-summary .club-contact {
+		font-size: 65%;
+	}
+	#buy2-get1-free .hb-offer {
+		overflow: hidden;
+		padding-bottom: 30px;
+	}
+	.club-summary .club-info a:hover,  .club-summary .club-info a:focus {
+		text-decoration: none;
+		color: #0c4f75;
+	}
+	
+	.confirmation .details dd {
+    	font-size: 10px!important;
+    }
+	
+	.send-message .send-message-form {
+		width: 300px;
+		overflow: hidden;
+		float: left;
+	}
+	.contact-panel-club .contact-intro,  .contact-panel-club .highlight-panel {
+		min-height: 170px;
+	}
+	.send-message .msg-personal-details,  .send-message-form .msg-select,  .send-message-form .msg-main-comment,  .send-message-form textarea,  .send-message-form .treatment-details,  .send-message .send-message-form .form-row-align,  .send-message .column-350 {
+		width: 300px;
+		float: left !important;
+	}
+	.send-message .msg-comment-box {
+		width: 300px;
+	}
+	.send-message-form .wrapError {
+		width: 300px;
+	}
+	.send-message-form .treatment-details select.text,  .send-message-form .treatment-details .styleSelect,  .send-message-form .treatment-details .styleSelectWrap {
+		width: 278px!important;
+	}
+	.send-message-form input,  .send-message-form textarea {
+		width: 270px;
+	}
+	.send-message-form .form-row {
+		width: 95%;
+		overflow: hidden;
+	}
+	.send-message-form .treatment-details input.datepicker {
+		margin-left: 0;
+	}
+	.send-message-form .treatment-details .select-wrap,  .send-message-form .treatment-details .column-350 .select-wrap {
+		float: left;
+	}
+	.send-message-form .treatment-details .column-350.fr label {
+		text-align: left;
+	}
+	.send-message-form .chzn-container {
+		float: left;
+		clear: both;
+		width: 270px !important;
+	}
+	.send-message-form .ui-datepicker-trigger {
+		display: none;
+	}
+	.send-message-form .confirmation {
+		width: 300px;
+	}
+	.send-message-form .confirmation .details dd {
+		font-size: 100%;
+	}
+	.confirmation .details {
+		width: 300px;
+	}
+	.confirmation .details dt {
+		margin-bottom: 0;
+	}
+	.send-message-form .top {
+		width: 240px;
+		padding: 20px 20px 20px 100px;
+		overflow: hidden;
+		font-size: 127%;
+	}
+	.confirmation .details p {
+		margin-left: 0;
+		padding: 0 10px 0 0;
+		width: 230px;
+		overflow: hidden;
+	}
+	.send-message-form .msg-select .error-msg {
+		margin-left: 0;
+	}
+	.send-message-form .error-msg {
+		margin-left: 0;
+	}
+	/** Membership Enquiry and confirmation form **/
+	
+	.touch #content.layout-enquiry-form fieldset.find {
+		width: 100%;
+	}
+	.touch #content.layout-enquiry-form fieldset.find .select-wrap, #content.layout-enquiry-form fieldset.find .styleSelectWrap {
+		width: 365px !important;
+	}
+}

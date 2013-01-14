@@ -1,0 +1,152 @@
+/**
+ * HTML5 ✰ Boilerplate
+ *
+ * Credit is left where credit is due.
+ * Much inspiration was taken from these projects:
+ * - yui.yahooapis.com/2.8.1/build/base/base.css
+ * - camendesign.com/design/
+ * - praegnanz.de/weblog/htmlcssjs-kickstart
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html {
+	overflow-y: scroll;
+}
+html, body, h1, h2, h3, h4, h5, h6, p, li {
+	margin: 0;
+	padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+img {
+	border: 0;
+}
+fieldset, form, legend {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+dl, dt, dd {
+	margin: 0;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Fonts & Typography */
+
+body {
+	color: #666;
+	font: 13px/1.231 arial, sans-serif;
+*font-size:small;
+	background: #f0f0f0 url("../images/backgrounds/bg.png") repeat;
+}
+.ffb {
+	font-family: "HelveticaNeueW01-BdExt", Helvetica, Arial, sans-serif;
+}
+.bold {
+	font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "HelveticaNeueW01-BdExt", Helvetica, Arial, sans-serif;
+	color: #333;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+h1 {
+	font-size: 262%; /* 34px */
+	color: #1a1a1a;
+	text-align: center;
+	clear: both;
+	margin: 16px 0 0;
+	padding: 24px 0 12px;
+	text-shadow: 2px 2px 0 #fff;
+}
+h2 {
+	font-size: 182%;
+}
+h3 {
+	font-size: 138.5%;
+}
+h3 a {
+	color: #333;
+	font-weight: normal;
+	display: inline-block;
+}
+h4 {
+	font-size: 123.1%;
+}
+h5 {
+	font-size: 108%;
+}
+p {
+	margin-bottom: 10px;
+	font-size: 108%;
+	line-height: 138.5%;
+}
+p.intro {
+	font-size: 123.1%;
+	color: #333;
+}
+div.intro {
+	font-size: 116%;
+}
+ol {
+	margin: 20px 0 0 20px;
+	padding: 0;
+	font-size: 108%;
+	font-weight: bold;
+}
+ol p {
+	font-weight: normal;
+}
+ol li {
+	margin: 0 0 20px;
+	line-height: 1.6em;
+}
+ol li ul {
+	margin: 10px 0 0 20px;
+}
+ol li ul li {
+	margin-bottom: 10px;
+}
+
+/* These selection declarations have to be separate No text-shadow: twitter.com/miketaylr/status/12228805301 */
+
+::-moz-selection {
+background:#FF5E99;
+color:#fff;
+text-shadow:none;
+}
+::selection {
+	background: #FF5E99;
+	color: #fff;
+	text-shadow: none;
+}
+
+/* Style placeholder text */
+
+::-webkit-input-placeholder {
+color:#808080;
+}
+
+:-moz-placeholder {
+color:#808080;
+}
+/*.invisible 			{visibility:hidden; }  Hide visually and from screenreaders, but maintain layout */
+
+.hidden {
+	display: none;
+	visibility: hidden;
+} /* Hide for both screenreaders and browsers: css-discuss.incutio.com/wiki/Screenreader_Visibility */

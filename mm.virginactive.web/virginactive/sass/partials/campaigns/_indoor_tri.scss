@@ -1,0 +1,1177 @@
+/* Indoor Tryathlon */
+
+.layout-block.indoor-tri {
+	overflow:visible;
+	border-top:none;
+}
+.indoor-tri .hero {
+	width:100%;
+	background:#000;
+	overflow:hidden;
+	margin-bottom:30px;
+}
+.indoor-tri .hero h2, .indoor-tri .hero p {
+	float:left;
+	width:auto;
+	margin:14px 20px 10px;
+	color:#fff;
+}
+.indoor-tri .hero p {
+	margin-top:20px;
+}
+.indoor-tri .hero .cta {
+	float:right;
+	margin:8px 20px 10px;
+}
+.indoor-tri .panel {
+	clear: both;
+	overflow:hidden;
+	margin-bottom:30px;
+}
+.indoor-tri .panel.event {
+	margin-bottom:10px;
+}
+.indoor-tri .panel h2 {
+	margin-top:-5px;
+}
+.indoor-tri .panel img {
+	float:left;
+	margin-right:20px;
+}
+.indoor-tri .panel.bg {
+	background: #e6e6e6;
+	overflow: hidden;
+	padding: 20px;
+}
+.indoor-tri .panel.bg img {
+	float: right;
+	margin:33px 0 0;
+}
+.indoor-tri .content-panel {
+	overflow:hidden;
+	width: 700px;
+}
+.indoor-tri .date .event-date {
+	float:right;
+	background:#d9d9d9;
+	position:relative;
+	margin-top:12px;
+}
+.ie7 .indoor-tri .date .event-date {
+	padding-top:30px;
+}
+.indoor-tri .date .cal {
+	width:60px;
+	height:60px;
+	background:url(../images/indoor-tri/sprite.png) left -745px no-repeat;
+	position:absolute;
+	top:-33px;
+	left:85px;
+}
+.ie7 .indoor-tri .date .cal {
+	left:80px;
+}
+.indoor-tri .date .event-date span {
+	display:block;
+	font-family:"HelveticaNeueW01-BdExt", Helvetica, Arial, sans-serif;
+	color:#333;
+	font-size:138%;
+	margin-top:3px;
+	line-height: 1.8em;
+	text-align: center;
+}
+.indoor-tri .date .event-date .when {
+	width:160px;
+	margin:30px 0 10px 30px;
+	padding-bottom:10px;
+	border-bottom:5px solid #b3b3b3;
+}
+.indoor-tri .date-b {
+	background: #d9d9d9 url(../images/indoor-tri/date-panel.png) no-repeat left bottom;
+	width: 220px;
+	height: 22px;
+	margin: 0;
+	padding: 0;
+}
+.indoor-tri .event-table {
+	overflow:hidden;
+	border:1px solid #e6e6e6;
+	margin-bottom:20px;
+}
+.indoor-tri .event-table table {
+	width:100%;
+	float:left;
+	background:#4d4d4d;
+	text-align:center;
+	border-bottom:none;
+}
+.indoor-tri .event-table table th {
+	color:#fff;
+	border-left:1px solid #ccc;
+}
+.indoor-tri .event-table table tbody tr th {
+	background:#4d4d4d;
+	text-transform:uppercase;
+}
+.indoor-tri .event-table table th.content {
+	width:500px;
+	padding:20px 10px 10px;
+	background:#fff;
+	border-left:1px solid #f2f2f2;
+	font-weight:normal;
+	color:#666;
+	font-size:108%;
+	text-align:left;
+	vertical-align:top;
+	text-transform:none;
+}
+.indoor-tri .event-table table th.name {
+	background:#333;
+	width:180px;
+	text-transform:none;
+	font:138% "HelveticaNeueW01-BdExt", Helvetica, Arial, sans-serif;
+}
+.indoor-tri .event-table table th.bb {
+	border-bottom:1px solid #666;
+}
+.indoor-tri .event-table table td {
+	padding:2px;
+	background:#fff;
+	border-top:1px solid #f2f2f2;
+	border-right:1px solid #f2f2f2;
+	border-left:1px solid #f2f2f2;
+}
+.indoor-tri .event-table table#duathlon td {
+	width:115px;
+}
+.indoor-tri .event-table table#triathlon td {
+	width:76px;
+}
+.indoor-tri .event-table table .type td {
+	width:113px;
+	height:67px;
+	background-image:url(../images/indoor-tri/sprite.png);
+	background-repeat:no-repeat;
+	background-color: #fff;
+	text-indent:-9999px;
+	white-space:nowrap;
+	overflow:hidden;
+	border-right:1px solid #f2f2f2;
+}
+.indoor-tri .event-table table#duathlon .type .cycle {
+	background-position:43px -560px;
+}
+.indoor-tri .event-table table#duathlon .type .run {
+	background-position:43px -490px;
+}
+.indoor-tri .event-table table#triathlon .type .swim {
+	background-position:22px -636px;
+}
+.indoor-tri .event-table table#triathlon .type .cycle {
+	background-position:22px -560px;
+}
+.indoor-tri .event-table table#triathlon .type .run {
+	background-position:22px -490px;
+}
+.indoor-tri #club-list {
+	clear: both;
+	float: left;
+	margin-bottom:20px;
+}
+.indoor-tri #club-list ul {
+	background:#f2f2f2;
+	overflow: hidden;
+	padding: 20px 0 20px 20px;
+}
+.indoor-tri #club-list li {
+	width: 305px;
+	float: left;
+	line-height:1.6em;
+	font-size:1em;
+}
+.indoor-tri #club-list li a {
+	font-weight:normal;
+}
+.indoor-tri .media-panels {
+	overflow:hidden;
+	margin-top:20px;
+	border-top:1px solid #f2f2f2;
+	border-bottom:1px solid #f2f2f2;
+}
+.indoor-tri .listing {
+	float:left;
+	overflow:hidden;
+	position:relative;
+	width:938px;
+	padding:20px 0 10px;
+}
+.indoor-tri .half-listing {
+	width:469px;
+	overflow:hidden;
+	float:left;
+}
+.indoor-tri .half-listing.fl {
+	float:left;
+	margin-right:23px;
+	border-right:1px solid #f2f2f2;
+}
+.indoor-tri .half-listing.fr {
+	float:right;
+	width:439px;
+}
+.indoor-tri .listing h4 {
+	font-size:123.1%;
+}
+.indoor-tri .listing p {
+	margin-top:6px;
+}
+.indoor-tri .btn-overlay span {
+	cursor: pointer;
+	display:block;
+	position:absolute;
+	left:120px;
+	top:180px;
+	width:auto;
+	background:url(../images/indoor-tri/sprite.png) no-repeat #1c1c1c;
+	color:#fff;
+	padding:15px 18px 15px 70px;
+	border-radius:8px;
+	font-size:138%;
+	text-transform: uppercase;
+}
+.indoor-tri .btn-overlay:hover {
+	text-decoration:none;
+}
+.indoor-tri .btn-video span {
+	background-position:20px 13px;
+}
+.indoor-tri #btn-photo span {
+	background-position: 20px -43px;
+	width: auto;
+	padding-left:60px;
+}
+/* Indoor Try - Last Year */
+
+.indoor-tri h3.line-through {
+	margin-top:30px;
+}
+.indoor-tri .testimonials {
+	width:100%;
+	float:none;
+}
+.indoor-tri .testimonials li {
+	padding:0 0 40px;
+	background:url(../images/indoor-tri/quotes.png) 144px top no-repeat;
+	border-bottom:none;
+}
+.indoor-tri .testimonials blockquote {
+	float:right;
+	width:710px;
+	padding:0 40px;
+	font-family:Georgia, Serif;
+}
+.indoor-tri .testimonials h4 {
+	float:left;
+	width:130px;
+	font-size: 100%;
+	font-weight:bold;
+	font-family:Arial, Sans-Serif;
+}
+.indoor-tri .testimonials h4 span {
+	display:block;
+	color:#808080;
+}
+.indoor-tri.full-width-panel-layout .hero-panel {
+	overflow:hidden;
+	margin:30px 40px 40px;
+}
+.indoor-tri.full-width-panel-layout .hero-panel .intro-panel-l {
+	width:350px;
+	float:left;
+	margin-right:20px;
+}
+.indoor-tri.full-width-panel-layout .hero-panel .intro-panel-r {
+	width:520px;
+	overflow:hidden;
+	float:right;
+	margin-top:40px;
+}
+.indoor-tri.full-width-panel-layout .hero-panel .intro-panel-l p.intro {
+	font-size:138%;
+}
+.indoor-tri.full-width-panel-layout section {
+	position:relative;
+	background: #fff url(../images/indoor-tri/classes-bg.gif) repeat-x left bottom;
+	border-bottom:none;
+	border-top:1px solid #e6e6e6;
+}
+.indoor-tri.full-width-panel-layout .full-width-panel-5 img {
+	margin-bottom:50px;
+}
+.indoor-tri.full-width-panel-layout .full-width-panel-2 img,  .indoor-tri.full-width-panel-layout .full-width-panel-4 img {
+	float:left;
+	margin-left:0;
+}
+.indoor-tri.full-width-panel-layout .full-width-panel-1 img,  .indoor-tri.full-width-panel-layout .full-width-panel-3 img,  .indoor-tri.full-width-panel-layout .full-width-panel-5 img {
+	float:right;
+	margin-right:0;
+}
+.indoor-tri.full-width-panel-layout p.cta, .indoor-tri.full-width-panel-layout p.more {
+	float:left;
+	margin:0;
+}
+.indoor-tri.full-width-panel-layout p.more {
+	float:left;
+	margin:10px 0 0 15px;
+}
+.indoor-tri.full-width-panel-layout .cal {
+	position:absolute;
+	left:40px;
+	top:0;
+	width:50px;
+	height:47px;
+	background: url(../images/indoor-tri/sprite.png) no-repeat left -870px;
+}
+.indoor-tri.full-width-panel-layout .full-width-panel-2 .cal,  .indoor-tri.full-width-panel-layout .full-width-panel-4 .cal {
+	left:890px;
+}
+.indoor-tri.full-width-panel-layout .content {
+	overflow:hidden;
+	margin-top:50px;
+	padding-left:40px;
+}
+.indoor-tri.full-width-panel-layout section h2, .indoor-tri.full-width-panel-layout section h3, .indoor-tri.full-width-panel-layout section p {
+	margin:0 0 10px 0;
+}
+.indoor-tri .header_width_social h2 {
+	float: left;
+}
+.indoor-tri .social-info {
+	display: block;
+	float: right;
+	margin: 0;
+	padding: 6px 0 0;
+	width: 235px;
+	clear: none;
+}
+.ie7 .indoor-tri .social-info {
+	width: 170px;
+}
+.indoor-tri .social-info li {
+	float: left!important;
+	position: relative!important;
+	top: auto!important;
+	left: auto!important;
+}
+.indoor-tri .social-info .social-twitter {
+	width: 85px;
+}
+.ie8 .indoor-tri .social-info .social-twitter, .ie7 .indoor-tri .social-info .social-twitter {
+	width: 90px;
+}
+.indoor-tri .social-info .social-facebook {
+	width: 85px;
+}
+.ie8 .indoor-tri .social-info .social-facebook, .ie7 .indoor-tri .social-info .social-facebook {
+	width: 80px;
+}
+.indoor-tri .social-info .social-googleplus {
+	width: 65px;
+}
+.ie7.indoor-tri .social-info .social-googleplus {
+	width: 0px;
+}
+.footer-cta.indoor p {
+	margin-left:20px;
+}
+.footer-cta.indoor p.cta {
+	margin-right:20px;
+}
+.footer-cta.indoor p.cta a {
+	width:auto;
+	font-size:123%;
+}
+/* Indoor Triathlon Overlays
+
+================================================== */
+
+.indoor-va-overlay h2 {
+	font-size: 182%;
+	padding-bottom:0;
+}
+.indoor-va-overlay p {
+	width:auto;
+}
+.indoor-va-overlay .pre-register {
+	width:540px;
+}
+.indoor-va-overlay .pre-register p {
+	width:530px;
+}
+.indoor-va-overlay fieldset {
+	padding:10px 10px 10px 0;
+	margin-bottom:15px;
+	border-bottom:5px solid #ccc;
+}
+.indoor-va-overlay fieldset.button {
+	padding:0;
+	border-bottom:none;
+	margin-bottom:0;
+}
+.indoor-va-overlay .pre-register .wrap {
+	background:#ccc;
+	padding:20px 0 5px 10px;
+	overflow:hidden;
+	margin:0;
+}
+.indoor-va-overlay label {
+	width:90px;
+	margin:0;
+	color:#333;
+}
+.indoor-va-overlay label.check {
+	width:auto;
+	margin:12px 0 0 10px;
+}
+.indoor-va-overlay input.checkbox {
+	margin-top:20px;
+}
+.indoor-va-overlay .pre-register input {
+	float:left;
+	width:auto;
+}
+.indoor-va-overlay .pre-register .input-email {
+	padding:5px;
+	width:400px;
+	background-color: #fff;
+	background-image:none;
+	color: #808080;
+	margin:0 0 10px 15px;
+}
+.indoor-va-overlay .pre-register .btn-submit {
+	-webkit-appearance: none;
+	width:100px;
+	-webkit-border-radius:0px;
+	float:right;
+	font:124% "HelveticaNeueW01-77BdCn 692722", Helvetica, Arial, sans-serif;
+	color:#FFF;
+	padding: 10px 40px 10px 10px;
+	cursor: pointer;
+	clear:both;
+	border:1px solid #D63333;
+}
+.indoor-va-overlay .pre-register .btn-submit:hover, .indoor-va-overlay .pre-register .btn-submit:focus {
+	background-color: #666;
+	border:1px solid #5c5c5c;
+}
+.indoor-va-overlay .pre-register input.validForm {
+	text-indent: -9000px;
+	border:1px solid #5c5c5c;
+	width:100px;
+	color:#666;
+	cursor:default;
+	background:#4d4d4d url('../images/indoor-tri/ajax-loader.gif') center center no-repeat !important;
+}
+.indoor-va-overlay .pre-register input.validForm:hover, input.validForm:focus {
+	background-color:#333;
+	color:#666;
+	border:1px solid #5c5c5c;
+}
+.indoor-va-overlay .error-msg {
+	background-image:none;
+}
+.indoor-va-overlay .error-msg p {
+	width:505px;
+	max-width:505px;
+	background-color:#CC0000;
+	border-radius:0;
+	margin:0;
+	color:#fff;
+	text-align:center;
+}
+.indoor-va-overlay a.button-close:link,  .indoor-va-overlay a.button-close:visited {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	color: #272727;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-decoration:none;
+	font-weight: bold;
+	padding-bottom: 2px;
+	border-bottom: 1px solid transparent;
+	z-index: 1000;
+	width:36px;
+	height:36px;
+	background:url('../images/indoor-tri/btn-close.png') 0 0 no-repeat;
+	text-indent: -9000px;
+	overflow:hidden;
+}
+.indoor-tri #overlay a span {
+	color:#1c3f94;
+}
+#va-overlay.indoor-va-overlay {
+	background:#e6e6e6;
+	border:10px solid #fff;
+	padding:20px;
+	top:50%;
+	left: 50%;
+}
+#va-overlay.indoor-va-overlay #overlay {
+	width:auto;
+	background:#e6e6e6;
+	padding:0;
+	box-shadow:none;
+	float: none;
+}
+.js .va-overlay-indoor-tri .va-overlay {
+	background:#e6e6e6;
+}
+.js .va-overlay-indoor-tri .video {
+	margin-top:20px;
+}
+.js .indoor-tri .testimonials {
+	width:938px;
+	height:120px;
+}
+.js .indoor-tri .testimonials .carousel {
+	width:938px;
+	height:100px;
+	position: relative;
+	overflow:hidden;
+}
+.js .indoor-tri .testimonials .carousel ul {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height:100px;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.js .indoor-tri .testimonials .carousel ul li {
+	float:left;
+	width:938px;
+	border-bottom:none;
+}
+.no-js .indoor-tri .testimonials .carousel ul li {
+	border-bottom:1px solid #e6e6e6;
+}
+.js .indoor-tri .testimonials .navPrev {
+	float:left;
+}
+.js .indoor-tri .testimonials .navNext {
+	float:right;
+}
+.js .image_carousel {
+	width:auto;
+	height:auto;
+}
+.js .image_carousel .carousel {
+	width:680px;
+	height:360px;
+	position: relative;
+	overflow:hidden;
+}
+.js .image_carousel .carousel ul {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height:540px;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.js .image_carousel .carousel ul li {
+	float:left;
+	width:680px;
+}
+.js .carousel-container-thumbs .carousel ul li {
+	width:683px;
+}
+.js .carousel-container-thumbs .carousel ul li a:first-child {
+	margin-left:4px;
+}
+.js .image_carousel .navPrev {
+	float:left;
+}
+.js .image_carousel .navNext {
+	float:right;
+}
+.js .image_carousel .carousel-thumbs {
+	margin:10px 0;
+}
+.js .image_carousel .carousel-thumbs li a {
+	margin-right:7px;
+}
+.js .image_carousel .va-overlay .carousel-thumbs li {
+	display: inline;
+}
+.js.ie7 .carousel-container-thumbs {
+	width: 680px;
+}
+.js .carousel-container-thumbs .carousel ul, .js .carousel-container-thumbs .carousel {
+	height: 94px;
+}
+.js .image_carousel .carousel-thumbs li img {
+	width:80px;
+	height:80px;
+	border:5px solid #fff;
+}
+.js .image_carousel .carousel-thumbs li img:hover,  .js .image_carousel .carousel-thumbs li img:focus,  .js .image_carousel .carousel-thumbs li img.active {
+	border:5px solid #000;
+}
+#va-overlay .va-overlay-indoor-tri {
+	width:auto;
+}
+.js .testimonials .nav-prev-contain {
+	clear:both;
+	overflow:hidden;
+	margin:0 auto;
+	width:50px;
+}
+.js .testimonials .navPrev {
+	width:22px;
+	height:21px;
+	background:url(../images/indoor-tri/sprite.png) 1px -387px no-repeat;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+.js .testimonials .navPrev.disabled, .js .testimonials .navPrev.disabled:hover, .js .testimonials .navPrev.disabled:focus {
+	background-position: 1px -427px;
+	cursor:default;
+}
+.js .testimonials .navPrev:hover, .js .testimonials .navPrev:focus {
+	background-position: 1px -466px;
+}
+.js .testimonials .navNext {
+	width:22px;
+	height:21px;
+	background:url(../images/indoor-tri/sprite.png) -23px -387px no-repeat;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+.js .testimonials .navNext.disabled, .js .testimonials .navNext.disabled:hover, .js .testimonials .navNext.disabled:focus {
+	background-position: -22px -427px;
+	cursor:default;
+}
+.js .testimonials .navNext:hover, .js .testimonials .navNext:focus {
+	background-position: -22px -466px;
+}
+.js .va-overlay-indoor-tri .nav-prev-contain {
+	clear:both;
+	overflow:hidden;
+	margin:0 auto;
+	width:640px;
+}
+.js .va-overlay-indoor-tri .navPrev {
+	width:60px;
+	height:60px;
+	background:url(../images/indoor-tri/sprite.png) 0 -238px no-repeat;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+.js .va-overlay-indoor-tri .navPrev.disabled, .js .overlay .navPrev.disabled:hover, .js .overlay .navPrev.disabled:focus {
+	background-image: none;
+}
+.js .va-overlay-indoor-tri .navPrev:hover, .js .va-overlay-indoor-tri .navPrev:focus {
+	background-position: 0 -306px;
+}
+.js .va-overlay-indoor-tri .nav-prev-contain {
+	clear:both;
+	overflow:hidden;
+	position:absolute;
+	left:50px;
+	top:200px;
+	margin:0 auto;
+	width:640px;
+}
+.js .va-overlay-indoor-tri .navNext {
+	width:60px;
+	height:60px;
+	background:url(../images/indoor-tri/sprite.png) 0 -102px no-repeat;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+.js .va-overlay-indoor-tri .navNext.disabled, .js .overlay .navNext.disabled:hover, .js .overlay .navNext.disabled:focus {
+	background-image: none;
+}
+.js .va-overlay-indoor-tri .navNext:hover, .js .va-overlay-indoor-tri .navNext:focus {
+	background-position: 0 -170px;
+}
+.js .va-overlay-indoor-tri .carousel-container-thumbs .nav-prev-contain {
+	clear:both;
+	overflow:hidden;
+	margin:0 auto;
+	width:155px;
+	position:static;
+}
+.js .va-overlay-indoor-tri .carousel-container-thumbs .navPrev {
+	width:22px;
+	height:21px;
+	background:url(../images/indoor-tri/sprite.png) 1px -387px no-repeat;
+}
+.js .va-overlay-indoor-tri .carousel-container-thumbs .navPrev.disabled, .js .va-overlay-indoor-tri .carousel-container-thumbs .navPrev.disabled:hover, .js .testimonials .navPrev.disabled:focus {
+	background-position: 1px -427px;
+	cursor:default;
+}
+.js .va-overlay-indoor-tri .carousel-container-thumbs .navPrev:hover, .js .va-overlay-indoor-tri .carousel-container-thumbs .navPrev:focus {
+	background-position: 1px -466px;
+}
+.js .va-overlay-indoor-tri .carousel-container-thumbs .navNext {
+	width:22px;
+	height:21px;
+	background:url(../images/indoor-tri/sprite.png) -23px -387px no-repeat;
+}
+.js .va-overlay-indoor-tri .carousel-container-thumbs .navNext.disabled, .js .va-overlay-indoor-tri .carousel-container-thumbs .navNext.disabled:hover, .js .testimonials .navNext.disabled:hover, .js .testimonials .navNext.disabled:focus {
+	background-position: -22px -427px;
+	cursor:default;
+}
+.js .va-overlay-indoor-tri .carousel-container-thumbs .navNext:hover, .js .va-overlay-indoor-tri .carousel-container-thumbs .navNext:focus {
+	background-position: -22px -466px;
+}
+.js .va-overlay-indoor-tri .carousel-container-thumbs .position {
+	width:110px;
+	float:left;
+	margin:0;
+	text-align:center;
+}
+.hide-text {
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+
+.indoor-tri.layout-block{
+	
+	p.already_registered_cta{
+		text-align: right;
+	}
+	
+	.tri-context{
+		min-height: 51px;
+		position: relative;
+		margin-bottom: 15px;
+	
+		p{
+			width: 738px;
+			float: left;
+		}
+		img{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			max-width: 200px;
+			padding-bottom: 20px;
+		}
+		
+	}
+	
+	.time_warning{
+		margin-bottom: 20px;
+		background: #fefcd5 url('/virginactive/images/campaigns/indoortri/time_to_complete_form.gif') 0 center no-repeat;;
+		border-top: 1px solid #e6e6e6;
+		border-bottom: 1px solid #e6e6e6;
+		padding: 10px 10px 10px 55px;
+	}
+	
+	fieldset.step_block{
+		width: 940px;
+		background: #f2f2f2;
+		margin-bottom: 20px;
+		padding: 0px;
+		border-bottom: 0px;
+		position: relative;
+		
+		.disabled{
+			position: absolute;
+			width: 940px;
+			background: #000;
+			top: 0px;
+			left: 0px;
+			z-index: 99999;
+			-moz-opacity: 0.50;
+			-khtml-opacity: 0.50;
+			opacity: 0.50;
+			filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+			
+		}
+		
+		&.no_footer{
+			padding-bottom: 30px;
+		}
+		
+		.btn{
+			background: #c00 url("../images/icons/btns.png") right -61px no-repeat;
+			
+			&:hover{
+				background: #333 url("../images/icons/btns.png") right -102px no-repeat;
+			}
+			
+			&.btn-disabled-xl{
+				background: #333 url("../images/member-enquiry/ajax-loader.gif") center 18px no-repeat !important;
+				text-indent: -9000px;
+				padding: 14px 95px 14px 12px;
+			}
+		}
+		
+		.header{
+			text-align: center;
+			background: #333333 url('/virginactive/images/campaigns/indoortri/step_block_header_bg.gif') 0 bottom no-repeat;
+			padding: 20px 0px;
+			margin-bottom: 40px;
+			
+			h3{
+				color: #fff;
+				margin: 0px;
+				font-size:2.4em;
+				font-size: 1.846em;
+			}
+			
+			p{
+				color: #aaa;
+				margin: 0px;
+			}
+		}
+		
+		.form_row{
+			width: 600px;
+			margin: 10px auto 0px;
+			
+			&.date{
+				span{
+					float: left;
+					margin-right: 10px;
+					margin-right: 7px;
+					line-height: 28px;
+					
+				}
+				
+				label span{
+					float: none;
+				}
+			}
+			
+			label{
+				width: 230px;
+				color: #333333;
+				padding-top: 0px;
+				line-height: 28px;
+				
+				span{
+					color: #cc0000;
+				}
+			}
+			
+			label.error-msg, span.error-msg{
+				width: 365px;
+				margin-top: 5px;
+				margin-left: 230px;
+				display: block;
+				background-position:20px 0;
+				
+				p{
+					margin-left: 0px;
+					width: auto;
+					max-width: 350px;
+					white-space: normal;
+				}
+				
+			}
+			
+			span.error-msg{
+				p{
+					margin-top: 5px;
+				}
+			}
+			
+			.field_group{
+				width: 370px;
+				float:left;
+				
+				.error-msg{
+					margin-left: 0px!important;
+				}
+			}
+			
+			input{
+				outline: 0px;
+			
+				&[type='text'].error{
+					border: 1px solid #c00!important;
+					background: #fbd0cd!important;
+				};
+			
+				&[type='text']:focus{
+					border:1px solid #edc675;
+					
+					&.error{
+						border:1px solid red;
+					}
+				}
+			
+				margin-bottom: 10px;
+			
+				&.text{
+					width: 353px;
+				}			
+			
+				&.short_text{
+					width: 163px;
+					margin-right: 10px;
+				}
+				&.datefield{
+					width: 90px;
+					margin-right: 5px;
+				}
+			}
+			
+			span.date_splitter{
+				float: left;
+				line-height: 28px;
+				margin-right: 5px;
+			}
+			
+			ul{
+				li{
+					label{
+						line-height: inherit;
+						padding-left: 10px;
+						width: auto;
+					}
+				}
+			}
+			
+			ul.stacked{
+				li{
+					label{
+						
+					}
+				}
+			}
+			
+			ul.radio{
+				margin-top: 5px;
+				
+				li{
+					clear: both;
+				
+					input{
+						margin-right: 10px;
+					}
+				}
+			}
+			
+			ul.lined{
+				li{
+					clear: none;
+					float: left;
+					padding-right: 20px;
+				}
+			}
+			
+			select{
+				width: 370px;
+			}
+			
+			&.checkbox{
+				label {
+					margin-top: -2px;
+					margin-left:10px;
+					width: 570px;
+					line-height: 18px;
+				}
+				
+				span{
+					&.error-msg{
+						margin-left: 20px;
+						width: 500px;
+						
+						p{
+							max-width: 500px;
+						}
+					}
+				}
+			}
+		}
+		
+		.footer{
+			padding: 20px;
+			border-top: 1px solid #cccccc;
+			margin-top: 35px;
+			
+			.btn{
+				float: right;
+			}
+		}
+	}
+
+	.registration_confirmation{
+		h2, h4{
+			text-align: center;
+		}
+		
+		h2{
+			font-size: 253.8%;
+		}
+		
+		h3{
+			text-align: center;
+			color: #cc0000;
+			font-size: 138.5%;
+			margin: 0px;
+		}
+		
+		
+		
+		.confirm_block{
+			background: #f2f2f2;
+			border-top: 1px solid #fff;
+			padding: 20px 0px;
+			width: 938px;
+			margin: 15px auto 20px;
+			
+			p{
+				padding: 0 40px;
+			}
+				
+			h3{
+				font-size: 215.4%;
+				border-top: 1px solid #cccccc;
+				border-bottom: 1px solid #cccccc;
+				margin-bottom: 20px;
+				padding: 12px 0;
+			}
+			
+			dl{
+				display: block;
+				width: 400px;
+				margin: 0 110px;
+			
+				dt
+				{
+					position: relative;
+					left: 0;
+					top: 1.1em;
+					font-weight: bold;
+					width: 200px;
+				}
+				
+				dd
+				{
+					
+					margin: -2px 0 0 220px;
+					width: 438px;
+				}
+			}
+			
+			.share_block{
+				border: 1px solid #cccccc;
+				width: 598px;
+				margin: 0 auto 30px;
+				height: 47px;
+				background: #fff;
+				
+				.share_inner{
+					ul.social-info{
+						padding-top: 13px;
+						padding-right: 0px;
+						width: 217px;
+					}
+				}
+			
+				p{
+					float: left;
+					background: #eaeaea;
+					width:310px;
+					line-height: 47px;
+					padding: 0 7px 0 0;
+					background: #eaeaea url('/virginactive/images/campaigns/indoortri/share_block.gif') right top no-repeat;
+					text-align: center;
+					margin: 0px;
+				}
+			}
+		
+		}
+		.confirm_block:before{
+			border-top: 1px solid #cccccc;  
+            content: '';
+            width: 938px;
+            position: absolute;
+            margin-left: 0px;
+            margin-top: -22px;
+		}
+	}
+
+}
+
+.no_margin{
+	margin-left: 0px!important;
+	margin-right: 0px!important;
+}
+
+.indoor-va-overlay{
+	z-index: 99999999!important;
+}
+
+.timeout_message{
+	text-align: center;
+
+	h2{
+		background: url('/virginactive/images/campaigns/indoortri/timout_clock.gif') center 0px no-repeat;
+		padding-top: 110px;
+	}
+	
+	p{
+		border-bottom: 3px solid #cccccc;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+.btn-restart{
+	float: left!important;
+}
+
+.js .indoor-tri.layout-block fieldset.step_block .form_row {
+	a.regtip{
+		padding-top: 3px;
+		position: relative;
+	
+		img{
+			margin-bottom: -2px;
+		}
+	
+		 span.infoBox{
+			color: #000;
+			display: none;
+			position: absolute;
+			left: -50px;
+			bottom: 25px;
+			z-index: 9999999;
+			width: 148px;
+			margin-left: 0;
+			padding: 8px;
+			background: #fefbd0;
+			border: 1px solid #808080;
+			font-weight: normal;
+			font-size: 93%;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+			-webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+			-moz-box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+			line-height: 18px;
+		}
+	}
+}
+
+.indoor-tri #Iframe{
+	margin-top: 10px;
+}
+

@@ -1,0 +1,408 @@
+#va-overlay-bg {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #161616;
+	opacity: 0.8;
+	z-index: 900;
+}
+#va-overlay-wrap {
+	display: none;
+}
+#va-overlay {
+	position: fixed;
+	top: 25%;
+	left: 25%;
+	z-index: 900;
+	outline: 0;
+}
+#va-overlay #overlay {
+	float: left;
+	padding: 20px;
+	box-shadow: 0 0 20px #000;
+	background: #fff;
+}
+#va-overlay .chosen-select, #va-overlay .styleSelectWrap {
+	width: 432px;
+}
+#va-overlay .styleSelect {
+	width: 350px;
+}
+#va-overlay .va-overlay-mini {
+	width: 510px;
+}
+#va-overlay .streetview {
+	width: 938px;
+}
+.ie6 #va-overlay-bg {
+	position: absolute;
+	background: #161616;
+height:expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+.ie6 #va-overlay {
+	position: absolute;
+}
+.ie7 #va-overlay-bg, .ie8 #va-overlay-bg {
+	opacity: 1;
+}
+.ie7 #va-overlay, .ie8 #va-overlay {
+	padding-bottom: 300px;
+}
+.isMobileDevice #va-overlay-bg {
+	width: 3000px;
+	height: 3000px;
+}
+.touch #va-overlay {
+	top: 25% !important;
+	left: 25% !important;
+}
+
+.borderradius .glow-active .streetview-glow {
+	position: absolute;
+	top: 12px;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	opacity: 0;
+	border: 10px solid red;
+	@include border-radius(30px);
+	-webkit-animation: pulse-sv-wk 2s 0.5s ease-in-out 1;
+	-moz-animation: pulse-sv-moz 2s 0.5s ease-in-out 1;
+}
+#close-overlay {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+#close-overlay a {
+	display: inline-block;
+	width: 23px;
+	height: 25px;
+}
+#close-overlay span {
+	cursor: pointer;
+	background: #333 url("../images/icons/clubs-sprite.png") -118px -332px no-repeat;
+	-webkit-transition: background-color .25s ease-out;
+	-moz-transition: background-color .25s ease-out;
+	-o-transition: background-color .25s ease-out;
+	transition: background-color .25s ease-out;
+}
+#close-overlay a:hover span, #close-overlay a:focus span {
+	outline: 0;
+	background-color: #c00;
+}
+.map-overlay {
+	width: 938px;
+}
+.map-overlay #content {
+	margin: 0;
+}
+.map-overlay .aside {
+	float: left;
+	width: 280px;
+}
+.map-overlay #primary-r {
+	margin: 0 0 0 20px;
+}
+.map-overlay h3 {
+	padding-bottom: 7px;
+	border-bottom: 6px solid #e6e6e6;
+}
+.map-overlay #title-wrap {
+	width: 638px;
+	overflow: hidden;
+	margin-bottom: 7px;
+	border-bottom: 6px solid #e6e6e6;
+}
+.map-overlay #title-wrap h3 {
+	float: left;
+	margin: 0;
+	border-bottom: 0;
+}
+.map-overlay #title-wrap .icon-list {
+	padding-top: 8px;
+}
+.map-overlay #map-large {
+	width: 638px;
+	height: 580px;
+	z-index: 100;
+}
+.map-overlay .get-directions {
+	position: relative;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #e6e6e6;
+}
+.map-overlay .get-directions ul {
+	margin: 0;
+}
+.map-overlay #directions-panel {
+	width: 260px;
+	overflow: hidden;
+	margin-bottom: 8px;
+	padding: 8px 10px 0 10px;
+	background: #e6e6e6;
+}
+.map-overlay ul.transport {
+	width: 105px;
+	overflow: hidden;
+	margin: 0 0 3px 95px;
+}
+.map-overlay .transport li {
+	float: left;
+	margin-right: 2px;
+	background: none;
+}
+.map-overlay .transport a {
+	display: inline-block;
+	width: 38px;
+	height: 26px;
+}
+.map-overlay .transport span {
+	background: url("../images/icons/clubs-sprite.png") no-repeat;
+}
+.map-overlay .transport #driving span {
+	background-position: 0 -816px;
+}
+.map-overlay .transport #walking span {
+	background-position: -42px -816px;
+}
+.map-overlay .transport #driving:hover span, .map-overlay .transport #driving span.active {
+	background-position: 0px -788px;
+}
+.map-overlay .transport #walking:hover span, .map-overlay .transport #walking span.active {
+	background-position: -42px -788px;
+}
+.map-overlay #directions-form li {
+	width: 260px;
+	height: 37px;
+	overflow: hidden;
+	list-style-type: none;
+	padding-left: 7px;
+	color: #fff;
+	background: url("../images/icons/clubs-sprite.png") -113px -389px no-repeat;
+}
+.map-overlay #directions-form .marker {
+	float: left;
+	padding-top: 9px;
+	font-size: 90%;
+	font-weight: bold;
+}
+.map-overlay #directions-form input {
+	float: left;
+	width: 192px;
+	margin: 0 0 0 15px;
+	font-weight: normal;
+}
+.map-overlay #directions-form input:focus {
+	border: 1px solid #999;
+	box-shadow: 1px 1px 5px #999;
+}
+.map-overlay .get-directions .btn {
+	display: block;
+	width: 187px;
+	margin: 0 0 0 40px;
+	text-align: center;
+}
+.map-overlay .get-directions #findclub {
+	width: 383px;
+}
+.map-overlay .get-directions #reverse {
+	position: absolute;
+	top: 62px;
+	right: 6px;
+	width: 20px;
+	height: 20px;
+}
+.map-overlay .get-directions #reverse span {
+	background: url("../images/icons/clubs-sprite.png") -40px -395px no-repeat;
+}
+.map-overlay .lower-panel .tab-upper {
+	width: 280px;
+	overflow: hidden;
+	margin-bottom: 7px;
+	border-bottom: 6px solid #e6e6e6;
+}
+.map-overlay .lower-panel h3 {
+	float: left;
+	display: inline-block;
+	width: 140px;
+	margin: 0;
+	padding: 0;
+	border-bottom: 0;
+}
+.map-overlay .lower-panel h3 a {
+	display: inline-block;
+	padding: 5px 10px 7px;
+}
+.map-overlay .directions-tab {
+	float: right;
+	text-align: right;
+}
+.map-overlay .directions-tab .inactive {
+	color: #ccc;
+	cursor: default;
+}
+.map-overlay .directions-tab .inactive:hover {
+	text-decoration: none;
+}
+.map-overlay .lower-panel .active {
+	background: #e6e6e6;
+}
+.map-overlay .location .location-title a {
+	color: #c00;
+}
+.map-overlay .location li {
+	width: 250px;
+	overflow: hidden;
+	margin: 0 0 6px 0;
+	padding: 0 0 6px 30px;
+	color: #4d4d4d;
+	line-height: 1.5;
+	border-bottom: 2px solid #f2f2f2;
+}
+.map-overlay .location li.marker {
+	background: url("../images/panels/marker-va.png") no-repeat;
+}
+.map-overlay .location li:last-child {
+	border-bottom: 0;
+}
+.map-overlay .location li span {
+	display: block;
+}
+.map-overlay .location li .coords {
+	display: none;
+	visibility: hidden;
+}
+.map-overlay .location li .marker {
+	float: left;
+	width: 30px;
+	height: 32px;
+	padding-top: 3px;
+	color: #fff;
+	font-size: 94%;
+	font-weight: bold;
+	background: url("../images/panels/marker-va.png") no-repeat;
+}
+.map-overlay .location .location-address {
+	float: left;
+	width: 250px;
+}
+.map-overlay .directions {
+	display: none;
+	padding-bottom: 8px;
+	border-bottom: 6px solid #e6e6e6;
+}
+.map-overlay .directions-list {
+	height: 339px;
+	overflow-y: auto;
+}
+.map-overlay .directions-list li {
+	width: 253px;
+	margin-bottom: 7px;
+	padding-bottom: 7px;
+	border-bottom: 1px solid #f2f2f2;
+}
+.map-overlay .directions-list li:last-child {
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+.map-overlay .dist-dur {
+	color: #808080;
+	font-size: 90%;
+}
+.map-overlay .info h5 {
+	margin: 0;
+	color: #4D4D4D;
+	font: bold 100% arial, sans-serif;
+}
+.map-overlay .info .hours {
+	margin-bottom: 6px;
+}
+.map-overlay .info p {
+	font-size: 95%;
+	margin-bottom: 6px;
+}
+.map-overlay .info p:last-child {
+	margin-bottom: 0;
+}
+.pac-selected {
+	color: #fff;
+	background: #ae0000;
+}
+.map-overlay .routes-list {
+	margin: 0 0 7px;
+}
+.map-overlay .routes-list h4 {
+	padding: 0;
+	margin: 0 0 5px;
+	font: bold 100% arial, sans-serif;
+}
+.map-overlay .routes-list h4 span {
+	background: url(../images/icons/arrows.png) 10px 5px no-repeat;
+	display: block;
+	height: 20px;
+	float: left;
+	width: 26px;
+}
+.map-overlay .routes-list ul {
+	border-bottom: 2px solid #f2f2f2;
+	border-top: 2px solid #f2f2f2;
+}
+.map-overlay .routes-list ul a {
+	display: block;
+	color: #666;
+	height: 26px;
+	line-height: 26px;
+	padding: 0 10px;
+	font-weight: normal;
+}
+.map-overlay .routes-list ul a:hover, .map-overlay .routes-list ul a:focus {
+	background: #fbfbfb;
+}
+.map-overlay .routes-list ul a .dist-dur {
+	display: inline-block;
+	float: right;
+	text-align: right;
+	color: #666;
+}
+.map-overlay .routes-list .selected-route {
+	background: #f6f6f6;
+	font-weight: bold;
+}
+.map-overlay .routes-list .selected-route:hover, .map-overlay .routes-list .selected-route:focus {
+	text-decoration: none;
+	background: #f6f6f6;
+}
+
+#overlay #clubfinderform {
+	background: #1a1a1a;
+	width: 470px;
+}
+#overlay #clubfinderform p {
+	padding: 17px 20px 15px;
+	margin-bottom: 5px;
+	color: #fff;
+	border-bottom: 1px solid #333;
+}
+#overlay #clubfinderform label {
+	font: normal 161.6% "HelveticaNeueW01-BdExt", Helvetica, Arial, sans-serif;
+}
+#overlay #clubfinderform fieldset {
+	padding: 10px 6px 19px 20px;
+}
+#overlay #clubfinderform input {
+	width: 383px;
+}
+#overlay #clubfinderform fieldset.find input#user-submit {
+	margin: 0;
+	padding: 4px 10px 2px;
+	width: 120px;
+	text-align: left;
+}
+#overlay #clubfinderform fieldset.find label {
+	width: 400px;
+}

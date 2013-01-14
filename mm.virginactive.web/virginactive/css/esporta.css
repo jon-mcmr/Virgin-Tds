@@ -1,0 +1,100 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block; 
+	margin:0; 
+	padding:0; 
+	border:0; 
+}
+
+html, body {
+	margin:0;
+	width:100%;
+	height:100%;
+	font: 13px/1.231 arial, sans-serif;
+	background:url("../images/esporta-bg.gif") repeat;
+}
+#esporta-wrap {
+	font-size: 123.1%;
+	display:table;
+	margin-top:62px;
+	text-align:center;
+	width:100%;
+	height:100%;
+}
+#esporta {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:left;
+}
+#esporta-inner {
+	position:relative;
+	margin:0 auto;
+	width:980px;
+	height:563px;
+}
+#content-bg {
+	width:980px;
+	height:483px;
+	background:url("../images/esporta-bg-squares.jpg") no-repeat;
+}
+h1 {
+	height:29px;
+	margin:0 0 12px 0;
+	color:#fff;
+	font:123.1% "Futura W01 Medium", sans-serif;
+	text-transform:uppercase;
+}
+h1 span {
+	font:100% "Futura W01 Bold", sans-serif;
+}
+#content {
+	position:absolute;
+	top:162px;
+	right:0;
+	width:451px;
+	height:191px;
+	padding:25px 20px;
+	color:#fff;
+	background:rgb(0,0,0);
+	background:rgba(0, 0, 0, 0.9)
+}
+h2 {
+	height:48px;
+	margin-top:0;
+	padding-left:38px;
+	font:123.1% "Futura W01 Medium", sans-serif;
+	text-transform:uppercase;
+	background:url("../images/esporta-logo.png") 0 6px no-repeat;
+}
+h2 span {
+	display:block;
+	font:108% "Futura W01 Bold", sans-serif;
+	letter-spacing:-0.01em;
+}
+#content p {
+	line-height:1.5;
+	font-size:75%;
+}
+.btn {
+	display:inline-block;
+	float:left;
+	padding:11px 40px 10px 12px;
+	color:#fff;
+	text-decoration:none;
+	text-shadow:1px 1px 0 #850000;
+	border:1px solid #d63333;
+	font:115% "HelveticaNeueW01-77BdCn 692722", Helvetica, Arial, sans-serif;
+	background:#c00 url("../images/icons/btns.png") right 15px no-repeat;
+}
+.btn:hover, a.btn:focus {
+	color:#fff;
+	background-color:#333;
+	border:1px solid #5c5c5c;
+	text-decoration:none;
+	text-shadow:1px 1px 0 #000;
+	background-position:right -21px;
+}
+#footer {
+	margin-top:15px;
+	color:#666;
+	font-size:68%;
+}

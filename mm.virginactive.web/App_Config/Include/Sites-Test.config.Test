@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<configuration xmlns:x="http://www.sitecore.net/xmlconfig/">
+  <sitecore>
+    <settings>
+      <!--  MAIL SERVER
+            SMTP server used for sending mails by the Sitecore server
+            Is used by MainUtil.SendMail()
+            Default value:
+      -->
+      <setting name="MailServer">
+        <!--<x:attribute name="value">mailgate.rapier.ltd.uk</x:attribute>-->
+        <x:attribute name="value">smtp.sendgrid.net</x:attribute>
+      </setting>
+
+      <!--  MAIL SERVER USER
+            If the SMTP server requires login, enter the user name in this setting
+      -->
+      <setting name="MailServerUserName">
+        <!--<x:attribute name="value">presentation</x:attribute>-->
+        <x:attribute name="value">mmvirginactive</x:attribute>
+      </setting>
+
+      <!--  MAIL SERVER PASSWORD
+            If the SMTP server requires login, enter the password in this setting
+      -->
+      <setting name="MailServerPassword">
+        <!--<x:attribute name="value">presentation</x:attribute>-->
+        <x:attribute name="value">rhip7shog8whos</x:attribute>
+      </setting>
+
+      <!--  MAIL SERVER PORT
+            If the SMTP server requires a custom port number, enter the value in this setting.
+            The default value is: 25
+      -->
+      <setting name="MailServerPort">
+        <x:attribute name="value">587</x:attribute>
+      </setting>
+
+      <!--  System Emails
+            Turn System Emails true -email sent to live addresses/false -use test email
+      -->
+      <setting name="SystemEmails" value="false" />
+
+      <!--  mm.TestEmailAddress
+            Use for email if system emails turned off
+      -->
+      <setting name="mm.TestEmailAddress" value="jon@mccormackmorrison.com" />
+
+			<!--  Virgin.SystemsErrorToMailNotification
+            Add this to turn on error alerting / emailing
+      -->
+			<setting name="Virgin.SystemsErrorToMailNotification" value="rohit@mccormackmorrison.com"/>
+
+			<!--Virgin.SiteURL:
+            For referencing in markup and for email links-->
+      <setting name="Virgin.SiteURL" value="http://dev.virginactive"/>
+      <!--Virgin.ImageRootUrl:
+            For referencing in markup and for email links-->
+      <setting name="Virgin.ImageRootUrl" value="http://dev.virginactive"/>
+      <!--Virgin.FacilitiesAndClassesURL:
+            For referencing in markup and for email links-->
+      <setting name="Virgin.FacilitiesAndClassesURL" value="http://dev.virginactive/facilities-and-classes/facilities.aspx"/>
+      <!--Virgin.YourHealthURL:
+            For referencing in markup and for email links-->
+      <setting name="Virgin.YourHealthURL" value="http://dev.virginactive/active-matters/articles.aspx"/>
+      <!--Virgin.MembershipURL:
+            For referencing in markup and for email links-->
+      <setting name="Virgin.MembershipURL" value="http://dev.virginactive/memberships/options.aspx"/>
+      <!--Virgin.PrivacyPolicy:
+            For referencing in markup and for email links-->
+      <setting name="Virgin.PrivacyPolicyUrl" value="http://dev.virginactive/legals/privacy-policy.aspx"/>
+      <!--Virgin.TermsAndConditionsUrl:
+            For referencing in markup and for email links-->
+      <setting name="Virgin.TermsAndConditionsUrl" value="http://dev.virginactive/legals/terms-and-conditions.aspx"/>
+    </settings>
+    
+    <!-- Test -->
+    <sc.variable name="dataFolder" value="D:\websites\test.virginactive\Data" />
+
+    <!-- Test -->
+    <scheduling>
+      <agent type="Sitecore.Tasks.UrlAgent" method="Run" interval="01:00:00">
+        <param desc="url">http://test.virginactive/?ajax=1&amp;cmd=KeepAlive</param>
+      </agent>
+    </scheduling>
+
+    
+    <!-- Test Website definition -->
+    <sites>
+      <site name="virginactiveglobal" x:before="site[@name='website']"
+                virtualFolder="/"
+                physicalFolder="/"
+                rootPath="/sitecore/content"
+                startItem="/worldwide"
+                database="web"
+                domain="extranet"
+                allowDebug="true"
+                cacheHtml="true"
+                htmlCacheSize="5MB"
+                enablePreview="false"
+                enableWebEdit="false"
+                enableDebugger="true"
+                disableClientData="false"
+                hostName="www.virginactive.com"/>
+
+      <site name="esporta" x:before="site[@name='website']"
+                virtualFolder="/"
+                physicalFolder="/"
+                rootPath="/sitecore/content"
+                startItem="/esportahome"
+                database="web"
+                domain="extranet"
+                allowDebug="true"
+                cacheHtml="true"
+                htmlCacheSize="5MB"
+                enablePreview="false"
+                enableWebEdit="false"
+                enableDebugger="true"
+                disableClientData="false"
+                hostName="www.esporta.com"/>
+
+
+      <site name="esportauk" x:before="site[@name='website']"
+                virtualFolder="/"
+                physicalFolder="/"
+                rootPath="/sitecore/content"
+                startItem="/esportahome"
+                database="web"
+                domain="extranet"
+                allowDebug="true"
+                cacheHtml="true"
+                htmlCacheSize="5MB"
+                enablePreview="false"
+                enableWebEdit="false"
+                enableDebugger="true"
+                disableClientData="false"
+                hostName="www.esporta.co.uk"/>
+
+
+      <site name="virginactive" x:before="site[@name='website']"
+            virtualFolder="/"
+            physicalFolder="/"
+            rootPath="/sitecore/content"
+            startItem="/home"
+            database="web"
+            domain="extranet"
+            allowDebug="true"
+            cacheHtml="true"
+            htmlCacheSize="4000MB"
+            enablePreview="false"
+            enableWebEdit="false"
+            enableDebugger="true"
+            disableClientData="false"
+            hostName="test.virginactive"/>
+      </sites>
+    </sitecore>
+</configuration>

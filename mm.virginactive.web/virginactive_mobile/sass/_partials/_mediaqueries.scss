@@ -1,0 +1,171 @@
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1),only screen and (min-device-pixel-ratio: 2) {
+	.header{
+		a.logo{
+			strong{
+				background:url('../img/icons2x/mobile-home.png') no-repeat 1px 0px;
+				background-size: 24px 25px;
+			}
+		}
+	} 
+	
+	
+	.content{
+		
+		&.enquiryform h1.icon{
+			background-image:url("../img/icons2x/membership_equiry_icon.png");
+			background-size: 49px 45px;
+		} 
+		
+		&.enquirythanks h1.icon{
+			background-image: url("../img/icons2x/form_thanks_h1.png");
+			background-size: 42px 44px;
+		}
+		
+		h1.closedcampaign{
+			background-image: url("../img/icons2x/offer-closed.png");
+			background-size: 38px 44px;
+		}
+		
+		h1.fourofour{
+			background-image: url("../img/icons2x/icon-smiley.png");
+			background-size: 42px 44px;
+		}		
+				 
+		
+		h2.icon span {
+			background-image: url("../img/icons2x/timetable_icon_small.png");
+			background-size: 26px 23px;; 
+		}
+		
+		&.club .contact_info .data_footer ul li.contact_us {
+			background-image: url("../img/icons2x/icon-contact.png");
+			background-size: 15px 11px;
+		}
+		
+		&.club .map .data_footer a {
+			background-image: url("../img/icons2x/small_arrow_grey.png");
+			background-size: 6px 10px;
+		
+		}
+		
+		&.day_classes a.next{
+			background-image: url("../img/icons2x/class-next.png");
+			background-size: 5px 9px;
+		}
+
+		&.day_classes a.previous{
+			background-image: url("../img/icons2x/class-prev.png");
+			background-size: 5px 9px;			
+		}		
+		
+		&.clubfinder h1.icon{
+			background-image: url("../img/icons2x/club_finder_icon.png");
+			background-size: 40px 44px;
+		}
+		
+		&.timetables-download .data_block {
+			background-image: url("../img/icons2x/downloadpdf.png");
+			background-size: 50px 56px;
+		}
+		
+		.button{
+			&.club_finder strong{
+				background-image: url('../img/icons2x/list_icon.png');
+				background-size: 20px 15px;
+			}
+			&.timetables{
+				strong{
+					background-image: url('../img/icons2x/icon-timetable.png');
+					background-size: 23px 17px;				
+				}
+			}
+			&.membership_enquiry{
+				text-align: center;
+				strong{
+					background-image: url('../img/icons2x/icon-enquiry.png');
+					background-size: 20px 19px;						
+				}
+			}
+			
+			&.current_location{ 
+				strong{
+					background-image: url("../img/icons2x/current_location_icon.png");
+					background-size: 22px 23px;
+				}
+
+				&.loading{
+					strong{
+						background:url('../img/icons2x/ajax-loader.gif') right center no-repeat!important;
+						background-size: 16px 16px;
+					}
+				}
+			}
+			
+			&.phone_number strong{
+				background-image: url("../img/icons2x/phone_icon.png");
+				background-size: 14px 14px;
+			}
+
+			&.arrow{
+				strong{
+					background: url('../img/icons2x/large_arrow_white.png') right center no-repeat;
+				}
+			}
+						
+		}
+		
+		div.carousel ul.pager li{
+			background-image: url('../img/bg/carousel_pager_bg2x.png');
+			background-size: 22px 9px;
+			
+			&.active{
+				background-position: right 0px;
+			}
+		}		
+		
+		ul.data_list li a span.arrow{
+			background-image: url('../img/icons2x/arrow.png');
+			background-size: 8px 12px;
+		}
+		
+		
+		.data_block .data_content.large_arrow{
+			background-image: url("../img/icons2x/large_arrow_grey.png");
+			background-size: 14px 21px;
+		} 
+		
+		&.clubfinder .data_block .data_footer ul li.distance{
+			background-image: url("../img/icons2x/distance_icon.png");
+			background-size: 9px 12px;
+		}
+		
+		&.clubfinder .data_block .data_footer ul li.phone, &.club .data_block .data_footer ul li.phone{
+			background-image: url("../img/icons2x/icon-phone.png");
+			background-size: 14px 14px;
+		}
+		
+		&.timetables h1.icon{
+			background-image: url("../img/icons2x/timetable_icon.png");
+			background-size: 49px 41px;
+		}
+		
+		&.timetables-download .data_block .data_footer a.download {
+			background: url("../img/icons2x/icon_download.png") no-repeat 0px 4px;
+			background-size: 10px 11px;
+		}
+		
+		fieldset select{
+			background-image: url("../img/icons2x/dropdown_arrow.png");
+			background-size: 32px 33px;
+		}		
+	}
+	
+	.footer{
+		.social{
+			ul li a{
+					background-image: url('../img/icons2x/social.png');
+					background-size: 95px 25px;				
+			}
+		}
+	}
+}

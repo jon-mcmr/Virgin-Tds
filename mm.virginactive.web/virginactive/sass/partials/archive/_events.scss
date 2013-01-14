@@ -1,0 +1,42 @@
+/* Club events */
+
+aside.events {
+	margin-top: 37px;
+}
+.events-wrap {
+	border-bottom: 2px solid #e6e6e6;
+}
+.events-wrap.details {
+	border-bottom: none;
+}
+.events-wrap .event-header {
+	position: relative;
+	width: 678px;
+	margin-bottom: 15px;
+}
+.events-wrap.details .pagination {
+	margin-bottom: 15px;
+	border-bottom: 6px solid #e6e6e6;
+	padding-bottom: 3px;
+	overflow: hidden;
+}
+.events-wrap section {
+	clear: both;
+	width: 678px;
+	margin-top: 30px;
+}
+.events-wrap.details section {
+	margin-top: 5px;
+}
+.events-wrap .highlight-panel {
+	position: relative;
+	clear: both;
+	margin: 20px 0;
+	padding: 30px 0 5px 10px;
+}
+.events-wrap .highlight-panel .title-note p {
+	font-size: 108%;
+}
+.events-wrap .title-note p {
+	background: #c00;
+}

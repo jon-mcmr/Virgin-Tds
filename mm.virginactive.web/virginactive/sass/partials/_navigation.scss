@@ -1,0 +1,528 @@
+/* MEGA DROPDOWN MENU */
+header nav {
+	float: left;
+	width: 654px;
+	margin: 5px 0 0 29px;
+}
+header nav ul#main-nav {
+	float: left;
+}
+nav li.level1 {
+	position: relative;
+	z-index: 800;
+	text-shadow: 1px 1px 0 #970000;
+	border: 1px solid transparent;
+	border-bottom: 0;
+	cursor: pointer;
+	background: url(../images/nav-br.gif) right 5px no-repeat;
+	letter-spacing: 0.01em;
+	-webkit-font-smoothing:antialiased;
+}
+nav li.level1 a.drop {
+	height: 21px;
+	font-size: 130%;
+	display: block;
+	position: relative;
+	z-index: 800;
+	color: #fff;
+	font-weight: normal;
+	display: block;
+	padding: 7px 10px 19px 9px;
+	-webkit-transition: color 0s;
+	-moz-transition: color 0s;
+	background: url(../images/icons/nav-arrow.png) no-repeat right 12px;
+}
+nav li.level1 a.drop:hover {
+	color: #fff;
+	text-decoration: none;
+}
+nav li.dropdown-hover {
+	background: #fff;
+	text-shadow: none;
+	overflow: visible;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	z-index: 750;
+	-moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+}
+nav li.dropdown-hover a.drop, nav li.dropdown-hover a.drop:hover {
+	color: #333;
+	text-decoration: none;
+	background: #fff url(../images/icons/nav-arrow.png) no-repeat right -32px;
+}
+nav a#nav-title-faci {
+	background-position: 222px 11px;
+	width: 231px;
+}
+nav li.dropdown-hover a#nav-title-faci {
+	background-position: 222px -33px;
+}
+nav a#nav-title-your {
+	background-position: 173px 11px;
+	width: 183px;
+}
+nav li.dropdown-hover a#nav-title-your {
+	background-position: 173px -33px;
+}
+nav a#nav-title-memb {
+	background-position: 165px 11px;
+	width: 176px;
+}
+nav li.dropdown-hover a#nav-title-memb {
+	background-position: 165px -33px;
+}
+nav .active .nav-indicator {
+	position: absolute;
+	bottom: 0;
+	width: 13px;
+	height: 6px;
+	background: url(../images/backgrounds/main-nav-active.gif) center top no-repeat;
+}
+.ie6 nav .active .nav-indicator {
+	bottom: -12px;
+}
+.ie9 nav .active .nav-indicator {
+	bottom: -1px;
+}
+/* Add nav arrow indicators */
+nav #nav-faci .nav-indicator {
+	left: 115px;
+}
+nav #nav-your .nav-indicator {
+	left: 89px;
+}
+nav #nav-memb .nav-indicator {
+	left: 85px;
+}
+nav li {
+	float: left;
+}
+nav .dropdown {
+	position: absolute;
+	left: -999em;
+	top: 47px;
+	width: 978px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	border-top: 0;
+	z-index: 1000;
+	background: #fff;
+	cursor: default;
+	-moz-box-shadow: 6px 6px 6px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: 6px 6px 6px rgba(0, 0, 0, .2);
+	box-shadow: 6px 6px 6px rgba(0, 0, 0, .2);
+}
+.nojs nav li#nav-faci:hover .dropdown, nav li.nav-faci-hover .dropdown {
+	left: -161px;
+}
+.nojs nav li#nav-your:hover .dropdown, nav li.nav-your-hover .dropdown {
+	left: -413px; /* ie6 */
+}
+.nojs nav li#nav-memb:hover .dropdown, nav li.nav-memb-hover .dropdown {
+	left: -617px; /* ie6 */
+}
+nav #nav-faci .dropdown {
+	background: url(../images/nav-bg.png) left bottom no-repeat #fff;
+}
+nav li.level1 .level2 {
+	text-shadow: none;
+	background: #fff;
+}
+nav .level2 h2 {
+	margin: 0 0 0 10px;
+	font-size: 130%;
+	padding-bottom: 12px;
+	border-bottom: 1px dotted #ccc;
+	color: #1a1a1a;
+}
+nav .level2 h3 {
+	margin: 6px 0 4px 10px;
+	font-size: 110%;
+}
+nav .level2 h2 a, nav .level2 h3 a {
+	color: #1A1A1A;
+	font-weight: normal;
+}
+nav .level2 {
+	float: left;
+	overflow: hidden;
+	padding: 17px 15px 10px 8px;
+}
+nav .level2 li {
+	float: none;
+}
+nav .level2 li {
+	margin-bottom: 6px;
+}
+nav .level2 li, nav .level2 p {
+	font-size: 90%;
+	font-family: arial, sans-serif;
+	letter-spacing: 0;
+}
+nav .level2 a {
+	color: #c00;
+}
+nav .level2 a:hover {
+	color: #333;
+}
+nav .level2 a.nav-new {
+	padding-right: 42px;
+	background: url(../images/icons/nav-new.gif) right top no-repeat;
+}
+/* Facilities/Classes drop down */
+nav .nav-drop-col1 {
+	width: 388px;
+}
+nav .nav-drop-col2 {
+	width: 124px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+nav .nav-drop-col3 {
+	width: 395px;
+	padding-bottom: 0;
+	border-bottom: 1px solid #ccc;
+	min-height: 140px;
+}
+nav .nav-drop-col4 {
+	width: 208px;
+	padding-bottom: 0;
+	border-right: 1px solid #ccc;
+}
+nav .nav-drop-col5 {
+	width: 163px;
+	padding-bottom: 0;
+}
+nav .nav-drop-club {
+	width: 395px;
+	height: 181px;
+	border-top: 1px solid #ccc;
+	padding-bottom: 25px;
+	background: url(../images/md-clubfinder.png) 15px 35px no-repeat #e6e6e6!important;
+}
+nav .level2-col {
+	width: 138px;
+	float: left;
+}
+nav .level2-col1 {
+	width: 121px;
+}
+nav .level2-col2 {
+	width: 140px;
+	border-left: 1px dotted #ccc;
+	border-right: 1px dotted #ccc;
+	min-height: 355px;
+}
+nav .level2-col3 {
+	width: 125px;
+}
+nav .level2-col4 {
+	width: 395px;
+}
+nav .level2-col6 {
+	width: 208px;
+}
+nav .level2-col ul {
+	margin: 0 0 20px 10px;
+}
+nav .level2-col ul:last-child {
+	margin-bottom: 0;
+}
+nav .level2-col ul.md-inner {
+	margin-bottom: 20px;
+}
+nav .nav-drop-col3 ul {
+	width: 385px;
+	overflow: hidden;
+	margin-top: 6px;
+	margin-bottom: 14px;
+}
+nav .nav-drop-col4 ul {
+	width: 204px;
+	overflow: hidden;
+	margin-top: 6px;
+	margin-bottom: 14px;
+}
+nav .nav-drop-col5 ul {
+	margin-top: 6px;
+}
+nav .nav-drop-col3 li {
+	float: left;
+	width: 165px;
+}
+nav .nav-drop-club h2 {
+	border-bottom: 0;
+	margin-bottom: 22px;
+}
+nav .nav-drop-club p {
+	width: 180px;
+	color: #333;
+	margin-left: 10px;
+	font-size: 95%;
+	font-family: arial, sans-serif;
+}
+/* Line 66 to be removed once MDD is rejigged */
+nav .level2 .level2-col6 h2, nav .level2 .level2-col5 h2 {
+	padding-bottom: 25px;
+	border-bottom: 0;
+}
+/* Dropdown 2: active matters - To restore Workouts: remove duplicate widths and display:none on lines 68/70 */
+nav .nav-drop2 {
+	float: left;
+	width: 117px;
+	width: 186px;
+	padding-left: 4px;
+	border-right: 1px solid #ccc;
+}
+nav .nav-drop2-col3 {
+	display: none;
+	width: 118px;
+}
+nav .nav-drop2 ul {
+	margin: 6px 0 20px 10px;
+}
+nav .nav-drop2-col4 {
+	width: 538px;
+}
+nav .nav-blog {
+	width: 532px;
+	overflow: hidden;
+	margin: 4px 0 0 10px;
+	padding-bottom: 8px;
+	border-bottom: 1px dotted #ccc;
+}
+nav .nav-blog img {
+	float: left;
+	margin: 4px 10px 0 0;
+}
+nav .nav-blog p {
+	color: #333;
+	margin: 0;
+	font-size: 95%;
+	font-family: arial, sans-serif;
+}
+nav .nav-blog p.date {
+	color: #999;
+	font-size: 90%;
+	margin: 0 0 4px 0;
+}
+nav .nav-blog p.intro {
+	font-size: 90%;
+}
+nav .level2 .read-more a {
+	display: inline-block;
+	color: #0C4F75;
+	margin: 10px 0 0 10px;
+}
+/* Dropdown 3: Memberships - To restore Member Benefits: remove duplicate widths on line 75 & 77 and height on line 80 */
+nav .nav-drop3 {
+	float: left;
+	width: 140px;
+	padding-left: 4px;
+	border-right: 1px solid #ccc;
+}
+nav .nav-drop3-col1 {
+	width: 179px;
+	width: 289px;
+}
+nav .nav-drop3-col2 {
+	width: 166px;
+}
+nav .nav-drop3-col3 {
+	width: 212px;
+	width: 287px;
+}
+nav .nav-drop3 ul {
+	margin: 10px 0 0 10px;
+}
+nav .nav-drop3 p {
+	margin: 6px 0 0 10px;
+}
+nav .nav-drop3-col4 {
+	width: 342px;
+	height: 185px;
+	border-right: 0;
+	background: url(../images/md-clubfinder.png) -20px -226px no-repeat;
+}
+nav .nav-drop3-col4 h2 {
+	border-bottom: 0;
+}
+nav .nav-drop3-col4 p {
+	width: 180px;
+}
+nav .nav-drop3-col4 p.bold {
+	margin-top: 7px;
+}
+/* Find your club button */
+.dropdown p a.btn {
+	background: url(../images/btn-finder.png) no-repeat right top #c00;
+	letter-spacing: -0.01em;
+	line-height: 28px;
+	width: 113px;
+	height: 30px;
+	border: none;
+}
+#nav-memb .dropdown p a.btn {
+	font-size: 146.5%;
+}
+#nav-memb .dropdown p a.btn:hover {
+	background-position: right -30px;
+	background-color: #333;
+}
+#nav-faci .dropdown p a.btn {
+	background-position: right -60px;
+	font-size: 138.5%;
+}
+#nav-faci .dropdown p a.btn:hover {
+	background-position: right -90px;
+	background-color: #333;
+}
+.touch #nav-faci .dropdown p a.btn {
+	width: 112px;
+	border: none;
+	background: #E6E6E6 url(../images/btn-finder-ipad.png) no-repeat right -60px;
+}
+.touch #nav-faci .dropdown p a.btn:hover {
+	background: #E6E6E6 url(../images/btn-finder-ipad.png) no-repeat right -90px;
+}
+.touch #nav-memb .dropdown p a.btn {
+	background: #E6E6E6 url(../images/btn-finder-ipad.png) no-repeat right 0;
+}
+.touch #nav-memb .dropdown p a.btn:hover {
+	background: #E6E6E6 url(../images/btn-finder-ipad.png) no-repeat right -30px;
+}
+/* F & C MDD */
+.ie8 nav .nav-drop-club {
+	height: 194px;
+	padding-bottom: 25px;
+}
+
+/* Sub navigation */
+
+.subnav {
+	width: 980px;
+	display: table;
+	background: #c00;
+}
+.subnav ul {
+	display: table;
+	margin: 0 auto;
+}
+.subnav li {
+	background: #c00 url(../images/icons/nav-fac-divider.png) left top repeat-y;
+}
+.subnav li:first-child {
+	background: none;
+}
+.subnav a {
+	display: inline-block;
+	line-height: 50px;
+	height: 50px;
+	padding: 0 20px;
+	font-size: 123.1%;
+	color: #fff;
+	white-space: nowrap;
+	font-weight: bold;
+}
+.subnav a:hover, .subnav a:focus {
+	text-decoration: none;
+	background-color: #ad0000;
+}
+.subnav a.active {
+	color: #1a1a1a;
+	background-color: #fff;
+}
+#club a {
+	padding: 0 13px;
+}
+.sub-subnav {
+	width: 980px;
+	display: table;
+	border: 1px solid #e6e6e6;
+	border-top: none;
+	background: #fff;
+}
+.sub-subnav ul {
+	display: table;
+	margin: 4px auto 0;
+}
+.sub-subnav li {
+	padding: 0 11px;
+}
+.sub-subnav a {
+	display: inline-block;
+	line-height: 46px;
+	height: 46px;
+	font-size: 108%;
+	font-weight: bold;
+	color: #666;
+	white-space: nowrap;
+	display: block;
+}
+.sub-subnav a:hover, .sub-subnav a.active {
+	color: #1a1a1a;
+	text-decoration: none;
+	background: url(../images/icons/arrows.png) 50% 38px no-repeat;
+}
+.sub-subnav em {
+	display: inline-block;
+	margin-top: 15px;
+}
+.jump-nav {
+	overflow:hidden;
+	margin:-20px 0 20px -20px;
+	padding:7px 10px 6px 8px;
+	background:#e6e6e6;
+}
+.jump-nav ul {
+	display:block;
+	text-align: center;
+	margin:0 auto;
+	width: 100%;
+}
+.jump-nav li {
+	display: inline-block;
+	float: none;
+	padding:0 0 0 7px;
+	background:url("../images/icons/divider-sprite.png") 0 -63px no-repeat;
+}
+.ie7 .jump-nav li{
+	display: inline;
+}
+
+.jump-nav li:first-child {
+	background:none;
+}
+.jump-nav a {
+	font-weight:normal;
+	font-size:95%;
+	;
+}
+/* Used on club pages, facilities & classes page */
+
+#primary-l .sub-subnav {
+	width: auto;
+	border: 0 none;
+}
+#primary-l .sub-subnav ul {
+	display: block;
+	margin: 0;
+}
+#primary-l .sub-subnav li {
+	padding: 0 28px 0 0;
+}
+#primary-l .sub-subnav a {
+	height: 30px;
+	line-height: 30px;
+	padding-bottom: 8px;
+}
+#primary-l .jump-nav {
+	display: block;
+	width: 660px;
+}
+#primary-l .jump-nav ul {
+	display: block;
+	margin: 0;
+}
